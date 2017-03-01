@@ -1,0 +1,310 @@
+/* Sass variables*/
+/*------------- Heading mixins*/
+/*------------- Flexbox mixins*/
+/*------------- Flexbox center mixin*/
+/* ---------------------- Preparing styles */
+html,
+body,
+div,
+header,
+nav,
+section,
+footer,
+article,
+figure,
+form {
+  margin: 0;
+  padding: 0; }
+
+html,
+nav,
+main,
+section,
+footer {
+  display: block; }
+
+html {
+  -webkit-text-size-adjust: 100%; }
+
+/* height to 100%, margin to 0% to create sticky footer */
+html {
+  height: 100%; }
+
+body {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  min-height: 100%;
+  width: 100%;
+  font-size: 16px;
+  background: #9C2542;
+  font-family: "Montserrat", sans-serif; }
+
+.wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  /* flex-grow 1 to create sticky footer for flexbox*/
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  width: 90vw;
+  height: auto;
+  margin: 0 auto;
+  background: #9C2542;
+  table-layout: fixed;
+  overflow-x: hidden;
+  position: relative; }
+
+#joanna {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  height: 5em;
+  width: 90vw;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin: 2em 0.5em 0.5em;
+  z-index: 9; }
+
+header {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  background: rgb(156, 37, 66);
+  background: rgba(156, 37, 66, 0.9);
+  width: 100%;
+  height: 20em;
+  margin: 0 auto;
+  padding-bottom: 1.5em;
+  position: fixed;
+  top: 0; }
+
+header h1 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-family: "Fredoka One", cursive;
+  line-height: 1;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  font-size: 2em;
+  font-weight: 100;
+  margin: 0.4em 0 0.4em;
+  padding: 0.5em;
+  z-index: 7; }
+
+#displayMovies {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  width: 50vw;
+  margin-top: 26em;
+  margin-bottom: 2em; }
+
+#displayNewMovie {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  width: 50vw;
+  margin-top: 2em;
+  margin-bottom: 2em; }
+
+.image {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-border-radius: 2%;
+  border-radius: 2%;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */ }
+
+.selectElems {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 1em; }
+
+button {
+  padding: 0.5em 1em 0.5em;
+  font-size: 1em;
+  margin: 0.5em;
+  background: rgb(156, 37, 66);
+  background: rgba(156, 37, 66, 0);
+  border: 2px solid black;
+  color: black;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */ }
+  button:hover {
+    color: #49fee3;
+    border: 2px solid #49fee3; }
+
+label {
+  font-family: "Fredoka One", cursive;
+  line-height: 1;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  font-size: 1.2em; }
+
+.addMovieSection {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.addGenresDiv {
+  margin: 0.5em; }
+
+.addForm {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 10px solid #49fee3;
+  padding: 3em; }
+
+input.genres {
+  padding: 3em;
+  margin: 0.5em;
+  text-align: center; }
+
+#ratings {
+  width: 5em; }
+
+#addMovieBtn {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-align-self: center;
+  -moz-align-self: center;
+  -ms-align-self: center;
+  align-self: center;
+  width: 10em;
+  margin: 1.5em 0 0.5em; }
+
+.addForm label {
+  margin: 1em 0 0.5em;
+  font-size: 1.2em;
+  color: black; }
+
+.movieDiv {
+  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.2);
+  border: 10px solid #49fee3;
+  margin: 0.5em;
+  padding: 3em; }
+
+.addMovieSection {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center; }
+
+/*# sourceMappingURL=main.css.map */

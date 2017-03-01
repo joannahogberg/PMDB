@@ -1,0 +1,203 @@
+@import "varsandmixins";
+
+/* ---------------------- Preparing styles */
+
+html,
+body,
+div,
+header,
+nav,
+section,
+footer,
+article,
+figure,
+form {
+    margin: 0;
+    padding: 0;
+}
+
+// For browsers without HTML5 support
+html,
+nav,
+main,
+section,
+footer {
+    display: block;
+}
+
+// To prevent Safari from scale text in iphone
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+
+/* height to 100%, margin to 0% to create sticky footer */
+
+html {
+    height: 100%;
+}
+
+body {
+    @include flexbox;
+    @include flex-direction(column);
+    @include justify-content(center);
+    min-height: 100%;
+    width: 100%;
+    font-size: 16px;
+    background: $red;
+    font-family: $text-font;
+}
+
+.wrapper {
+    @include flexbox;
+    /* flex-grow 1 to create sticky footer for flexbox*/
+    @include flex-grow(1);
+    @include flex-direction(column);
+    @include align-items(center);
+    @include justify-content(center);
+    width: 90vw;
+    // max-width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    background: $red;
+    table-layout: fixed;
+    overflow-x: hidden;
+    position: relative;
+}
+
+// Styles for logo
+#joanna {
+    @include flexbox;
+    height: 5em;
+    width: 90vw;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin: 2em 0.5em 0.5em;
+    z-index: 9;
+}
+
+header {
+    @include flexbox;
+    @include flex-direction(column);
+    @include align-items(center);
+    // background: $red;
+    @include transparent-backgound($red, 0.9);
+    width: 100%;
+    // max-width: 1000px;
+    height: 20em;
+    margin: 0 auto;
+    // z-index: 13;
+    padding-bottom: 1.5em;
+    position: fixed;
+    top: 0;
+    // @include breakpoint(medium) {
+    //     width: 100vw;
+    // }
+}
+
+header h1 {
+    @include flexbox;
+    @include head-1;
+    font-weight: 100;
+    margin: 0.4em 0 0.4em;
+    padding: 0.5em;
+    z-index: 7;
+}
+
+#displayMovies {
+    @include flexbox;
+    @include flex-direction(column);
+    @include justify-content(center);
+    width: 50vw;
+    margin-top: 26em;
+    margin-bottom: 2em;
+}
+
+#displayNewMovie {
+    @include flexbox;
+    @include flex-direction(column);
+    @include justify-content(center);
+    width: 50vw;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.image {
+    @include flexbox;
+    @include border-radius (2%);
+}
+
+.selectElems {
+    @include flexbox;
+    @include flex-direction(row);
+    padding: 1em;
+}
+
+button {
+    padding: 0.5em 1em 0.5em;
+    font-size: 1em;
+    margin: 0.5em;
+    @include transparent-backgound($red, 0);
+    border: 2px solid black;
+    color: black;
+    cursor: pointer;
+    @include border-radius (5px);
+    &:hover {
+        color: $celeste;
+        border: 2px solid $celeste;
+    }
+}
+
+label {
+    @include head-3;
+}
+
+.addMovieSection {
+    @include flexbox;
+    @include flex-direction(column);
+}
+
+.addGenresDiv {
+    margin: 0.5em;
+}
+
+.addForm {
+    @include flexbox;
+    @include flex-direction(column);
+    border: 10px solid $celeste;
+    padding: 3em;
+}
+
+input.genres {
+    padding: 3em;
+    margin: 0.5em;
+    text-align: center;
+}
+
+#ratings {
+    width: 5em;
+}
+
+#addMovieBtn {
+    @include flex-center;
+    @include align-self(center);
+    width: 10em;
+    margin: 1.5em 0 0.5em;
+}
+
+.addForm label {
+    margin: 1em 0 0.5em;
+    font-size: 1.2em;
+    color: black;
+}
+
+.movieDiv {
+    @include transparent-backgound(white, 0.2);
+    border: 10px solid $celeste;
+    margin: 0.5em;
+    padding: 3em;
+}
+
+.addMovieSection {
+    @include flex-center;
+}
