@@ -88,11 +88,10 @@ header {
     margin: 0 auto;
     z-index: 100;
     padding-bottom: 1.5em;
-    position: fixed;
     top: 0;
-    // @include breakpoint(medium) {
-    //     width: 100vw;
-    // }
+    @include breakpoint(small) {
+        position: fixed;
+    }
 }
 
 .logo {
@@ -143,9 +142,12 @@ h2 {
     @include flex-direction(column);
     @include justify-content(center);
     margin: 0 auto;
-    margin-top: -16em;
+    // margin-top: -16em;
     margin-bottom: 3em;
     z-index: 1;
+    @include breakpoint(small) {
+        margin-top: -16em;
+    }
 }
 
 .selectElems {
@@ -200,7 +202,7 @@ button,
 #editMovieForm {
     @include flex-center;
     @include flex-direction(column);
-    margin-top: 22em;
+    margin-top: 2em;
     width: 80vw;
     padding: 3em;
     border: 10px solid $celeste;
@@ -213,6 +215,10 @@ button,
     @include breakpoint(large) {
         margin-top: 20em;
     }
+}
+
+.editMovieDiv {
+    @include flexbox;
 }
 
 #addMovieSec {
@@ -288,12 +294,13 @@ input {
     border: 10px solid $celeste;
     margin-bottom: 1.5em;
     padding: 1em;
-    // width: 80vw;
-    &:first-child {
-        margin-top: 20em;
-    }
-    &:last-child {
-        margin-bottom: -18em;
+    @include breakpoint(small) {
+        &:first-child {
+            margin-top: 20em;
+        }
+        &:last-child {
+            margin-bottom: -18em;
+        }
     }
     @include breakpoint(medium) {
         padding: 3em;
@@ -306,7 +313,10 @@ input {
 }
 
 .NewMovieDiv {
-    margin-bottom: -13em;
+    display: none;
+    @include breakpoint(small) {
+        display: inherit;
+    }
 }
 
 .movieElems {
