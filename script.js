@@ -4,14 +4,13 @@ I found The Module Pattern easier to use than Revealing Module Pattern. It has a
 is minimazing the risk of having variables being overwritten or the function names conflicting. 
 All functions are placed inside of the module and thereby gets boud to the module and I noticed that I prefer writing functions with 
 object literal notation. You don't need to use the this keyword wich sometimes can be confusing.
-
 The Object prototype constructor returns a reference to the Object constructor function that created the instance object. I wanted to try 
 out on this and find it easy to understand how the new Object gets created using the constructor.
 By using this type of constructor I'm setting the new Objects prototype to an instance of the constructor, so that 
 new Object inherits all of the properties that the constructor contains.
 
-The function to rate movies is not yet done but I hope to solve it soon.
-
+github: https://github.com/joannahogberg/PMDB
+link: https://joannahogberg.github.io/PMDB
 */
 
 
