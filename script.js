@@ -15,6 +15,7 @@ The function to rate movies is not yet done but I hope to solve it soon.
 */
 
 
+
 function init() {
 
     const movieByGenreBtn = document.getElementById("selectMovies");
@@ -36,10 +37,15 @@ function init() {
     thisYearMovieBtn.addEventListener("click", MovieDataBase.showMoviesThisYear);
     editMovieBtn.addEventListener("click", MovieDataBase.saveMovieEdits);
 
+
+
     /**
      * Call updateMovie function to set the option values of selMovElem
      */
     MovieDataBase.updateMovie();
+
+
+
 
 
 };
@@ -50,9 +56,10 @@ function init() {
 window.addEventListener("load", init);
 
 window.addEventListener("scroll", hideLogo);
-var scroll = document.getElementById("logo");
+
 
 function hideLogo() {
+    const scroll = document.getElementById("logo");
     if (document.body.scrollTop > 100 || scroll.scrollTop > 100) {
 
         document.getElementById("logo").className = "hideLogo";
@@ -371,7 +378,6 @@ const MovieDataBase = (function() {
              * @param  {Object}        New movie object
              */
             MovieDataBase.addNewMovie(newMovie);
-            // MovieDataBase.getMovies();
             MovieDataBase.saveMovieEdits();
             MovieDataBase.updateMovie();
 
@@ -512,6 +518,7 @@ ${ratinScale}
 `;
                 moviesByGenreList.innerHTML += showList;
             };
+            document.getElementById("genres").selectedIndex = null;
         },
 
 
@@ -677,6 +684,7 @@ ${ratinScale}
         updateMovie: () => {
 
             selElem.innerHTML = `<option value="" selected disabled>Select Movie</option>`;
+
             movToEditElem.innerHTML = "";
             //Array.prototype.filter() method to loop through the movies array and set the
             //option values to the movies.prototype.title
@@ -710,6 +718,7 @@ ${ratinScale}
 
                     rmvGenresElem.innerHTML += `<option value="${genres}">${genres}</option>`
                 );
+
 
             };
 
@@ -762,3 +771,6 @@ ${ratinScale}
         }
     };
 })();
+
+
+// document.getElementById("selMovElem").selectedIndex = null;
