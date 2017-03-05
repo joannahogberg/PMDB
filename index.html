@@ -13,8 +13,15 @@
 <body>
     <div class="wrapper">
 
-        <header class="header">
-            <svg id="joanna" data-name="joanna" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 94.04 38.05"><defs>
+
+
+
+
+        <header class="header" id="scroll">
+            <div class="logo" id="logo">
+
+                <h1>Pattis MovieDataBase</h1>
+                <svg id="joanna" data-name="joanna" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 94.04 38.05"><defs>
  <lineargradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" style="stop-color:rgb(0,0,0);stop-opacity:0">
 	  <animate attributeName="stop-opacity" values="0; 1" begin="middle1.end" dur="1s" fill="freeze" />
@@ -89,20 +96,132 @@
                 </svg>
 
 
-            <h1>Pattis MovieDataBase</h1>
+
+
+            </div>
 
             <div class="selectElems">
+                <nav class="header_nav">
+                    <a href="#displayMovies" class="nav_link" id="showMovieBtn">SHOW ALL MOVIES</a>
+                    <a href="#displayMovies" class="nav_link" id="topMovieBtn">SHOW HIGHEST RATED MOVIE</a>
+                    <a href="#displayMovies" class="nav_link" id="worstMovieBtn">SHOW LOWEST RATED MOVIE</a>
+                    <a href="#displayMovies" class="nav_link" id="thisYearMovieBtn">SHOW THIS YEARS MOVIES</a>
+
+                    <a href="#addMovieSec" class="nav_link">ADD MOVIE</a>
+                    <a href="#editMovie" class="nav_link">EDIT MOVIES</a>
 
 
-                <button id="showMovieBtn" type="button" name="button">SHOW ALL MOVIES</button>
-                <button id="topMovieBtn" type="button" name="button">SHOW HIGHEST RATED MOVIE</button>
-                <button id="worstMovieBtn" type="button" name="button">SHOW LOWEST RATED MOVIE</button>
-                <button id="thisYearMovieBtn" type="button" name="button">SHOW THIS YEARS MOVIES</button>
+                </nav>
+
+                <!--</div>-->
+                <form id="selectMovies" method="post">
+                    <label>Search by gengre</label>
+                    <select name="genres" id="genres" onChange="window.location.href=this.value">
+                        <option value="" selected disabled>Genres</option>
+						<option value="#displayMoviesByGenre" label="Action">Action</option>
+						<option value="#displayMoviesByGenre" label="Adventure">Adventure</option>
+						<option value="#displayMoviesByGenre" label="Animation">Animation</option>
+                        <option value="#displayMoviesByGenre" label="Biography">Biography</option>
+						<option value="#displayMoviesByGenre" label="Comedy">Comedy</option>
+                        <option value="#displayMoviesByGenre" label="Crime">Crime</option>
+						<option value="#displayMoviesByGenre" label="Drama" >Drama</option>
+						<option value="#displayMoviesByGenre" label="Kids">Kids</option>
+						<option value="#displayMoviesByGenre" label="Musical">Musical</option>
+						<option value="#displayMoviesByGenre" label="Romance">Romance</option>
+                        <option value="#displayMoviesByGenre" label="Sci-Fi">Sci-Fi</option>
+                        <option value="#displayMoviesByGenre" label="Thriller">Thriller</option>
+		</select>
+
+                </form>
+                <!--<button id="editMovieBtn" type="button" name="button">EDIT MOVIES</button>-->
             </div>
-            <form id="selectMovies" method="post">
-                <label>Search by gengre</label>
-                <select name="genres" id="genres">
-						<option value="Action">Action</option>
+        </header>
+
+        <!--<img class="image" src="" alt="">-->
+
+        <div class="displayMovieDiv">
+            <!--List to display movies-->
+            <section id="displayMovies">
+
+            </section>
+            <section id="displayMoviesByGenre">
+                <!--Div to display movies-->
+
+            </section>
+
+
+
+        </div>
+
+        <div id="addMovieSec">
+
+
+            <section class="addMovieSection">
+
+
+
+                <form id="addForm" action="index.html" method="post">
+                    <h2>Add Missing Movie to the DataBase</h2>
+                    <p>If you feel that a movie is missing feel free to add it yourself through this form.</p>
+
+                    <label for="title">Movie Title:</label>
+                    <input id="title" type="text" name="title" value="">
+                    <label for="year">Release year:</label>
+                    <input id="year" type="text" name="year" value="">
+
+                    <label for="genres">Add genres:</label><br>
+                    <div class="addGenresDiv">
+
+                        <label>Action  <input class="genres" type="checkbox" value="Action"></label>
+                        <label> Adventure  <input class="genres" type="checkbox" value="Adventure"> </label>
+                        <label> Animation  <input class="genres" type="checkbox" value="Animation"> </label>
+                        <label> Biography <input class="genres" type="checkbox" value="Biography"> </label>
+                        <label> Comedy  <input class="genres" type="checkbox" value="Comedy"> </label>
+                        <label> Crime  <input class="genres" type="checkbox" value="Crime"> </label>
+                        <label> Drama  <input class="genres" type="checkbox" value="Drama"> </label>
+                        <label> Kids  <input class="genres" type="checkbox" value="Kids"> </label>
+                        <label>  Musical  <input class="genres" type="checkbox" value="Musical"> </label>
+                        <label>  Romance  <input class="genres" type="checkbox" value="Romance"> </label>
+                        <label>  Sci-Fi  <input class="genres" type="checkbox" value="Sci-Fi">  </label>
+                        <label>  Thriller  <input class="genres" type="checkbox" value="Thriller"></label>
+                    </div>
+                    <label for="ratings">Add my rating:</label>
+                    <select id="ratings" name="ratings">
+                        <option value="" selected disabled>Rating</option>
+                        <option value="5">5</option>
+						<option value="4">4</option>
+						<option value="3">3</option>
+                        <option value="2">2</option>
+						<option value="1">1</option>
+                        
+            </select>
+                    <label for="description">Movie Description:</label>
+                    <input id="description" type="text" name="description" value="" placeholder="Place movie decription">
+                    <label for="imgUrl">Image URL:</label>
+                    <input id="imgUrl" type="url" placeholder="Insert valid img-url">
+                    <button id="addMovieBtn" type="button" name="button">ADD MOVIE</button>
+                </form>
+
+
+            </section>
+        </div>
+        <div id="displayNewMovie">
+            <!--List to display newMovie-->
+        </div>
+
+        <div class="editMovieDiv" id="editMovie">
+            <form id="editMovieForm">
+                <h2>Change genres of a movie in the DataBase</h2>
+                <p>If you wish to rate or change genres of a movie just do it!</p>
+                <label for="selMovElem">Select Movie to edit:</label>
+                <select id="selMovElem" name="selMovElem" onchange="MovieDataBase.getSelMovieGenres()">
+                    <option  >Select Movie</option>
+		</select>
+                <p id="movToEdit"></p>
+                <label for="addGenre">Add Genre
+                <select id="addGenre" name="genre">
+                    <option value="" selected disabled>Genres</option>
+			            <option value="Action">Action</option>
 						<option value="Adventure">Adventure</option>
 						<option value="Animation">Animation</option>
                         <option value="Biography">Biography</option>
@@ -115,72 +234,18 @@
                         <option value="Sci-Fi">Sci-Fi</option>
                         <option value="Thriller">Thriller</option>
 		</select>
-
+</label>
+                <label for="rmvGenre">Remove Genre
+                <select id="rmvGenre" name="genre">
+                    <option value="" selected disabled>Genres</option>
+		
+		</select></label>
+                <button id="editMovieBtn" type="button" name="button">SAVE MY INPUT</button>
             </form>
 
-        </header>
-
-        <img class="image" src="" alt="">
-        <div id="displayMovies">
-            <!--List to display movies-->
 
         </div>
 
-        <div class="newMovieDiv">
-
-
-            <section class="addMovieSection">
-
-                <!--<h2>Add Missing Movie to the DataBase</h2>
-                <p>If you feel that a movie is missing feel free to add it yourself through this form.</p>-->
-
-                <form class="addForm" action="index.html" method="post">
-                    <h2>Add Missing Movie to the DataBase</h2>
-                    <p>If you feel that a movie is missing feel free to add it yourself through this form.</p>
-
-                    <label for="title">Movie Title:</label>
-                    <input id="title" type="text" name="title" value="">
-                    <label for="year">Release year:</label>
-                    <input id="year" type="text" name="year" value="">
-
-                    <label for="genres">Genres</label><br>
-                    <div class="addGenresDiv">
-
-                        <input class="genres" type="checkbox" value="Action">Action
-                        <input class="genres" type="checkbox" value="Adventure">Adventure
-                        <input class="genres" type="checkbox" value="Animation">Animation
-                        <input class="genres" type="checkbox" value="Biography">Biography
-                        <input class="genres" type="checkbox" value="Comedy">Comedy
-                        <input class="genres" type="checkbox" value="Crime">Crime<br>
-                        <input class="genres" type="checkbox" value="Drama">Drama
-                        <input class="genres" type="checkbox" value="Kids">Kids
-                        <input class="genres" type="checkbox" value="Musical">Musical
-                        <input class="genres" type="checkbox" value="Romance">Romance
-                        <input class="genres" type="checkbox" value="Sci-Fi">Sci-Fi
-                        <input class="genres" type="checkbox" value="Thriller">Thriller
-                    </div>
-                    <label for="ratings">My Rating:</label>
-                    <select id="ratings" name="ratings">
-            <option value="5">5</option>
-						<option value="4">4</option>
-						<option value="3">3</option>
-                        <option value="2">3</option>
-						<option value="1">1</option>
-                        
-            </select>
-                    <!--<input id="ratings" type="text" name="ratings" value="" placeholder="Valid input: numbers 1-5">-->
-                    <label for="description">Movie Description:</label>
-                    <input id="description" type="text" name="ratings" value="" placeholder="Place movie decription">
-                    <label for="imgUrl">Image URL:</label>
-                    <input id="imgUrl" type="text" name="ratings" value="" placeholder="Insert valid img-url">
-                    <button id="addMovieBtn" type="button" name="button">ADD MOVIE</button>
-                </form>
-
-                <div id="displayNewMovie">
-                    <!--List to display newMovie-->
-                </div>
-            </section>
-        </div>
     </div>
     <script type="text/javascript" src="script.js"></script>
 </body>

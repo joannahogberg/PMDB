@@ -23,6 +23,7 @@ function init() {
     const showAllMovieBtn = document.getElementById("showMovieBtn");
     const addMovieBtn = document.getElementById("addMovieBtn");
     const thisYearMovieBtn = document.getElementById("thisYearMovieBtn");
+    const editMovieBtn = document.getElementById("editMovieBtn");
 
     /**
      * Eventlistener to apply click/change-functions to buttons
@@ -33,12 +34,36 @@ function init() {
     addMovieBtn.addEventListener("click", MovieDataBase.movieAddedByForm);
     showAllMovieBtn.addEventListener("click", MovieDataBase.getAllMovies);
     thisYearMovieBtn.addEventListener("click", MovieDataBase.showMoviesThisYear);
+    editMovieBtn.addEventListener("click", MovieDataBase.saveMovieEdits);
+
+    /**
+     * Call updateMovie function to set the option values of selMovElem
+     */
+    MovieDataBase.updateMovie();
+
+
 };
 
 /**
  * Load init-function when window opens
  */
 window.addEventListener("load", init);
+
+window.addEventListener("scroll", hideLogo);
+var scroll = document.getElementById("logo");
+
+function hideLogo() {
+    if (document.body.scrollTop > 100 || scroll.scrollTop > 100) {
+
+        document.getElementById("logo").className = "hideLogo";
+
+
+
+    } else {
+        document.getElementById("logo").className = "logo";
+
+    }
+}
 
 /**
  * MovieDataBase with Module Pattern
@@ -260,6 +285,25 @@ const MovieDataBase = (function() {
 
     const movieList = document.getElementById("displayMovies");
     const newMovieList = document.getElementById("displayNewMovie");
+    const moviesByGenreList = document.getElementById("displayMoviesByGenre");
+
+    let rmvGenresElem = document.getElementById("rmvGenre");
+    let selElem = document.getElementById("selMovElem");
+    let movToEditElem = document.getElementById("movToEdit");
+
+    //Object literal for rating-radiobuttons
+    const ratinScale =
+        `   <input  type="radio" name="rating" value="1">
+              <label>1</label>
+              <input  type="radio" name="rating" value="2">
+              <label>2</label>
+              <input  type="radio" name="rating" value="3">
+              <label>3</label>
+              <input  type="radio" name="rating" value="4">
+              <label>4</label>
+              <input  type="radio" name="rating" value="5">
+               <label class="five">5</label>`;
+
 
     return {
 
@@ -289,6 +333,7 @@ const MovieDataBase = (function() {
         addNewMovie: (movie) => {
             movies.push(movie);
 
+
         },
 
 
@@ -299,24 +344,25 @@ const MovieDataBase = (function() {
             let titleInput = document.getElementById('title').value;
             let yearInput = document.getElementById('year').value;
 
+
             //Get input from checkboxes and returns array of selected values
             const getGenresFromCheckbox = (genres) => {
-                const result = [];
+                var addedGenres = [];
                 const checkboxes = document.getElementsByClassName("genres");
                 for (let i = 0; i < checkboxes.length; i++) {
                     if (checkboxes[i].checked) {
-                        result.push(checkboxes[i].value);
+                        addedGenres.push(checkboxes[i].value);
                     }
                 }
-                return result;
+                return addedGenres;
             };
-            let genInput = getGenresFromCheckbox();
+            let genInput = getGenresFromCheckbox([]);
             let rateInput = document.getElementById('ratings').value;
             let descInput = document.getElementById('description').value;
             let imgUrlInput = document.getElementById('imgUrl').value;
 
             //Creates a new object with prototype of movieConstructor
-            const newMovie = new MovieDataBase.movieConstructor(titleInput, yearInput, genInput, rateInput, descInput, imgUrlInput);
+            const newMovie = new MovieDataBase.movieConstructor(titleInput, yearInput, [genInput], rateInput, descInput, imgUrlInput);
 
             /**
              * Call addNewMovie function with parameter
@@ -324,28 +370,24 @@ const MovieDataBase = (function() {
              */
             MovieDataBase.addNewMovie(newMovie);
 
+
             //Displays the new movie to interface
-            const movieHtml = `<div class="movieDiv"><p>Title: ${newMovie.title}</p>
-<p>Year: ${newMovie.year}</p>
-<p>Genres: ${newMovie.genres}</p>
-<p>Rating: ${MovieDataBase.sumUp(newMovie.ratings)} /5</p>
-<p>Description: ${newMovie.descript}</p>
-<img  src="${newMovie.img}" width="300" height="430" class="image">
-<form id="rating">
-  <input  type="radio" name="rating" value="1">
-  <label>1</label>
-  <input  type="radio" name="rating" value="2">
-  <label>2</label>
-  <input  type="radio" name="rating" value="3">
-  <label>3</label>
-  <input  type="radio" name="rating" value="4" >
-  <label>4</label>
-  <input  type="radio" name="rating" value="5" checked>
-  <label>5</label>
-<button class="submit" type="button" name="${newMovie.title}" onclick="MovieDataBase.addMovieRate()">RATE: ${newMovie.title}</button>
-</form></div>`;
+            const movieHtml = `<div class="NewMovieDiv">
+            <div class="movieElems">
+            <h4>${newMovie.title}</h4>
+        <p>Year: ${newMovie.year}</p>
+        <p>Genres: ${newMovie.genres}</p>
+        <p>Rating: ${MovieDataBase.sumUp(newMovie.ratings)} /5</p>
+        <p>Description: ${newMovie.descript}</p>
+        <form id="rating">
+        ${ratinScale}
+        <button class="submit" id="${newMovie.title}" type="button" name="${newMovie.title}" onclick="MovieDataBase.addMovieRate(this.id)">RATE: ${newMovie.title}</button>
+        </form></div><figure class="movieImg"><img  src="${newMovie.img}"  class="image"></figure></div>`;
 
             newMovieList.innerHTML = movieHtml;
+
+            const addForm = document.getElementById("addForm");
+            addForm.reset();
 
 
         },
@@ -358,13 +400,17 @@ const MovieDataBase = (function() {
         },
 
         /**
-         * Calculate avarage rating for movie
-         * @param  {Object}     Movie object
+         * Map.Reduce method to calculate avarage rating for movie
+         * @param  {Array}     Array of the movies objects prototype ratings
          * @return {Number}		Avarage rating 
          */
         sumUp: (rates) => {
-            var avg = rates.map((c, i, arr) => c / arr.length).reduce((p, c) => c + p);
-            return avg.toFixed(1);
+
+            //The array.prototype.map() method creates a new array with the results of calling 
+            //a provided function on every element in this array. 
+            //Array.prototype.reduce()method to sum the values, and map to find the average.
+            var avg = rates.map((val, index, arr) => val / arr.length).reduce((preVal, val) => val + preVal);
+            return avg.toFixed(1); //To get only one decimal
         },
 
         /**
@@ -377,6 +423,8 @@ const MovieDataBase = (function() {
             const date = new Date();
             const thisYear = date.getFullYear();
 
+            //Array.prototype.filter() method to check if the objects prototype value year is the same as thisYear
+            //it will be pushed into the new array.
             return movies.filter((movie) => {
                 return movie.year == thisYear;
             });
@@ -386,31 +434,23 @@ const MovieDataBase = (function() {
         showMoviesThisYear: () => {
             newMovieList.innerHTML = "";
             movieList.innerHTML = "";
+            moviesByGenreList.innerHTML = "";
 
             const movThisYear = MovieDataBase.getMoviesThisYear(year);
 
             let showList;
             for (prop in movThisYear) {
                 showList = `<div class="movieDiv">
-<p>Title: ${movThisYear[prop].title}</p>
+                <div class="movieElems">
+<h4>${movThisYear[prop].title}</h4>
 <p>Year: ${movThisYear[prop].year}</p>
 <p>Genres: ${movThisYear[prop].genres}</p>
  <p>Rating: ${MovieDataBase.sumUp( movThisYear[prop].ratings)} /5</p>
 <p>Description: ${movThisYear[prop].descript}</p>
-<img  src="${movThisYear[prop].img}" width="300" height="430" class="image">
 <form id="rating">
-  <input  type="radio" name="rating" value="1">
-  <label>1</label>
-  <input  type="radio" name="rating" value="2">
-  <label>2</label>
-  <input  type="radio" name="rating" value="3">
-  <label>3</label>
-  <input  type="radio" name="rating" value="4" >
-  <label>4</label>
-  <input  type="radio" name="rating" value="5" checked>
-  <label>5</label>
-   <button class="submit" type="button" name="${movThisYear[prop].title}" onclick="MovieDataBase.addMovieRate()">RATE: ${movThisYear[prop].title}</button>
-</form></div>
+${ratinScale}
+   <button class="submit" type="button" id="${movThisYear[prop].title}" name="${movThisYear[prop].title}" onclick="MovieDataBase.addMovieRate(this.id)">RATE: ${movThisYear[prop].title}</button>
+</form></div><figure class="movieImg"><img  src="${movThisYear[prop].img}"  class="image"></figure></div>
 `;
                 movieList.innerHTML += showList;
             };
@@ -425,8 +465,15 @@ const MovieDataBase = (function() {
         movieByGenre: (genres) => {
             //Get value for selected genre
             const x = document.getElementById("genres").selectedIndex;
-            const genre = document.getElementsByTagName("option")[x].value;
+            const genre = document.getElementsByTagName("option")[x].label;
+            //Array.prototype.filter() method to create a new array with all elements that 
+            //pass the test implemented by the Object.prototype.some() method.
+            //The array.prototype.map() method then creates a new array with the results of calling a provided 
+            //function on every element in this array.
             return movies.filter((movie) =>
+
+                    //Object.prototype.some() method to test whether 
+                    //some element in the array match the genre value that is implemented by the provided function.
                     movie.genres.some((genres) => genres === genre))
                 .map(movie => {
                     return movie;
@@ -439,33 +486,26 @@ const MovieDataBase = (function() {
 
             newMovieList.innerHTML = "";
             movieList.innerHTML = "";
-            const showMovies = MovieDataBase.movieByGenre(genres);
+            moviesByGenreList.innerHTML = "";
+            //Call on movieByGenre to get objects with property value from the selected genre
+            const showMovies = MovieDataBase.movieByGenre(movies);
 
             let showList;
 
             for (movie in showMovies) {
                 showList = `<div class="movieDiv">
-<p>Title: ${showMovies[movie].title}</p>
+                <div class="movieElems">
+<h4>${showMovies[movie].title}</h4>
 <p>Year: ${showMovies[movie].year}</p>
 <p>Genres: ${showMovies[movie].genres}</p>
  <p>Rating: ${MovieDataBase.sumUp( showMovies[movie].ratings)} /5</p>
 <p>Description: ${showMovies[movie].descript}</p>
-<img  src="${showMovies[movie].img}" width="300" height="430" class="image">
 <form id="rating">
-  <input  type="radio" name="rating" value="1">
-  <label>1</label>
-  <input  type="radio" name="rating" value="2">
-  <label>2</label>
-  <input  type="radio" name="rating" value="3">
-  <label>3</label>
-  <input  type="radio" name="rating" value="4" >
-  <label>4</label>
-  <input  type="radio" name="rating" value="5" checked>
-  <label>5</label>
-  <button class="submit" type="button" name="${showMovies[movie].title}" onclick="MovieDataBase.addMovieRate()">RATE: ${showMovies[movie].title}</button>
-</form></div>
+${ratinScale}
+  <button class="submit" type="button" id="${showMovies[movie].title}" name="${showMovies[movie].title}" onclick="MovieDataBase.addMovieRate(this.id)">RATE: ${showMovies[movie].title}</button>
+</form></div><figure class="movieImg"> <img src="${showMovies[movie].img}"  class="image"></figure></div>
 `;
-                movieList.innerHTML += showList;
+                moviesByGenreList.innerHTML += showList;
             };
         },
 
@@ -474,51 +514,52 @@ const MovieDataBase = (function() {
         getAllMovies: () => {
             newMovieList.innerHTML = "";
             movieList.innerHTML = "";
+            moviesByGenreList.innerHTML = "";
+            //Array.prototype.map() method returns a new array based on the previous movies array.
+            //Callback function handle the looping and sets listAllMovies to be the object literals value 
             let listAllMovies = movies.map(movie =>
                 movie = `<div class="movieDiv">
-                <p class="selMov" id"${movie.title}">Title: ${movie.title}</p>
+                <div class="movieElems">
+                <h4>${movie.title}</h4>
             <p>Year: ${movie.year}</p>
             <p>Genres: ${movie.genres}</p>
            <p>Ratings: ${MovieDataBase.sumUp(movie.ratings)} /5</p>
             <p>Description: ${movie.descript}</p>
-            <img src="${movie.img}" width="300" height="430" class="image">
             <form id="rating">
-              <input  type="radio" name="rating" value="1">
-              <label>1</label>
-              <input  type="radio" name="rating" value="2">
-              <label>2</label>
-              <input  type="radio" name="rating" value="3">
-              <label>3</label>
-              <input  type="radio" name="rating" value="4" >
-              <label>4</label>
-              <input  type="radio" name="rating" value="5" checked>
-              <label>5</label>
-              <button class="submit" type="button" name="${movie.title}" onclick="MovieDataBase.addMovieRate()">RATE: ${movie.title}</button>
-            </form></div>`
+            ${ratinScale}
+              <button class="submit" id="${movie.title}" type="button" name="${movie.title}" onclick="MovieDataBase.addMovieRate(this.id)">RATE: ${movie.title}</button>
+            </form></div><figure class="movieImg"> <img src="${movie.img}"  class="image"></figure></div>`
             );
             movieList.innerHTML = listAllMovies.sort(); //Sort to list in alphabetic order
+
+
         },
         /**
          * Calculate the rating of a movie
-         * @param  {Object}     
+         * @param  {Object}     Array of all movie objects
          * @return {Number}		Ratings
          */
         getRate: (movie) => {
+            //Array.prototype.reduce() method with parameters: previous value & current value
+            //and a single number is returned
             const sumOfRatings = movie.ratings.reduce((total, rating) => {
+                //Looping to get: sumOfRatings += rating;
                 return total + rating;
             }, 0);
             const numberOfRatings = movie.ratings.length;
-
             return (sumOfRatings / numberOfRatings).toFixed(1);
         },
 
         /**
-         * Get the movie with highest rating
-         * @return {Object}
+         * Get the movie with lowest rating
+         * @param {Number} 
+         * @return {Object}     Movie object with highest rating
          */
-
         movieByTopRating: () => {
+            //Array.prototype.reduce() method with parameters: previous value & current value
             return movies.reduce((preVal, val) => {
+                //If previous movies value is greater than current movies value return current value
+                //else return previous movies value
                 if (MovieDataBase.getRate(preVal) < MovieDataBase.getRate(val)) {
 
                     return val;
@@ -531,10 +572,14 @@ const MovieDataBase = (function() {
 
         /**
          * Get the movie with lowest rating
-         * @return {Object}
+         * @param {Number} 
+         * @return {Object}     Movie object with lowest rating
          */
         movieByWorstRating: () => {
+            //Array.prototype.reduce() method with parameters: previous value & current value
             return movies.reduce((preVal, val) => {
+                //If previous movies value is greater than current movies value return current value
+                //else return previous movies value
                 if (MovieDataBase.getRate(preVal) > MovieDataBase.getRate(val)) {
                     return val;
                 } else {
@@ -545,65 +590,169 @@ const MovieDataBase = (function() {
 
         //Display top rated movie when topMovieBtn is clicked
         getTopMovie: () => {
+            //Call on movieByTopRating to get object with highest rating and save in movie variable
             const movie = MovieDataBase.movieByTopRating();
             movieList.innerHTML = "";
             newMovieList.innerHTML = "";
+            moviesByGenreList.innerHTML = "";
 
             let movieHtml = `
             <div class="movieDiv">
-            <p>Title: ${movie.title}</p>
+            <div class="movieElems">
+            <h4>${movie.title}</h4>
             <p>Year: ${movie.year}</p>
             <p>Genres: ${movie.genres}</p>
             <p>Rating: ${MovieDataBase.sumUp(movie.ratings)} /5</p>
             <p>Description: ${movie.descript}</p>
-            <img src="${movie.img}" width="300" height="430" class="image">
+           
             <form id="rating">
-              <input  type="radio" name="rating" value="1">
-              <label>1</label>
-              <input  type="radio" name="rating" value="2">
-              <label>2</label>
-              <input  type="radio" name="rating" value="3">
-              <label>3</label>
-              <input  type="radio" name="rating" value="4">
-              <label>4</label>
-              <input  type="radio" name="rating" value="5" checked>
-              <label>5</label>
-             <button class="submit" type="button" name="${movie.title}" onclick="MovieDataBase.addMovieRate()">RATE: ${movie.title}</button>
-            </form></div>`;
+           ${ratinScale}
+             <button class="submit" type="button" id="${movie.title}" name="${movie.title}" onclick="MovieDataBase.addMovieRate(this.id)">RATE: ${movie.title}</button>
+            </form></div><figure class="movieImg"><img  src="${movie.img}"  class="image"></figure></div>`;
             movieList.innerHTML = movieHtml;
 
 
         },
         //Display top rated movie when worstMovieBtn is clicked
         getWorstMovie: () => {
+            //Call on movieByWorstRating to get object with lowest rating and save in movie variable
             const movie = MovieDataBase.movieByWorstRating();
             movieList.innerHTML = "";
             newMovieList.innerHTML = "";
+            moviesByGenreList.innerHTML = "";
 
             let movieHtml = `
             <div class="movieDiv">
-            <p>Title: ${movie.title}</p>
+            <div class="movieElems">
+            <h4>${movie.title}</h4>
             <p>Year: ${movie.year}</p>
             <p>Genres: ${movie.genres}</p>
             <p>Rating: ${MovieDataBase.sumUp(movie.ratings)} /5</p>
             <p>Description: ${movie.descript}</p>
-            <img src="${movie.img}" width="300" height="430" class="image">
             <form id="rating">
-              <input  type="radio" name="rating" value="1">
-              <label>1</label>
-              <input  type="radio" name="rating" value="2">
-              <label>2</label>
-              <input  type="radio" name="rating" value="3">
-              <label>3</label>
-              <input  type="radio" name="rating" value="4" >
-              <label>4</label>
-              <input  type="radio" name="rating" value="5" checked>
-              <label>5</label>
-             <button class="submit" type="button" name="${movie.title}" onclick="MovieDataBase.addMovieRate()">RATE: ${movie.title}</button>
-            </form></div>`;
+             ${ratinScale}
+             <button class="submit" type="button" id="${movie.title}" name="${movie.title}" onclick="MovieDataBase.addMovieRate(this.id)">RATE: ${movie.title}</button>
+            </form></div><figure class="movieImg"><img  src="${movie.img}"  class="image"></figure></div>`;
             movieList.innerHTML = movieHtml;
 
+        },
+
+
+        //Function to rate rate movie by radio-buttons
+        rateMovie: () => {
+
+            var rateElem = document.getElementById("rating");
+            console.log(rateElem);
+            let rateValue = 0;
+            for (var i = 0; i < rateElem.rating.length; i++) {
+                if (rateElem.rating[i].checked == true) {
+                    rateValue = rateElem.rating[i].value;
+                };
+            };
+
+
+            return rateValue;
+
+        },
+        addMovieRate: (movieToRate) => {
+
+            const value = MovieDataBase.rateMovie();
+            const thisMovie = movies.filter((movie) =>
+                movie.title == movieToRate);
+            for (prop in thisMovie) {
+                thisMovie[prop].ratings.push(parseInt(value));
+            }
+            alert(value);
+
+        },
+
+        /**
+         * Sets the option values for the selMovElem
+         */
+        updateMovie: () => {
+            // let selElem = document.getElementById("selMovElem");
+            // selElem.innerHTML = `<option value="" selected disabled>Select Movie</option>`;
+            movToEditElem.innerHTML = "";
+            //Array.prototype.filter() method to loop through the movies array and set the
+            //option values to the movies.prototype.title
+            return movies.filter((movie) =>
+                selElem.innerHTML += `<option value="${movie.title}">${movie.title}</option>`
+            );
+
+
+        },
+        /**
+         * Sets the option values for the rmvGenresElem
+         */
+        getSelMovieGenres: () => {
+
+            rmvGenresElem.innerHTML = `<option value="" selected disabled>Genres</option>`;
+            //Set variable to option values
+            const optionVal = document.getElementById("selMovElem").value;
+
+            //Object literal to set the movToEditElem.innerHTML to be the selected movie title
+            movToEditElem.innerHTML = `${optionVal}`;
+
+            //Array.prototype.filter() method to check if the objects prototype value title 
+            //is the same as optionVal. Saves the correct object in the selMovie variable
+            const selMovie = movies.filter((movie) =>
+                movie.title == optionVal
+            );
+
+            for (prop in selMovie) {
+                let genreList = selMovie[prop].genres;
+                return genreList.filter((genres) =>
+
+                    rmvGenresElem.innerHTML += `<option value="${genres}">${genres}</option>`
+                );
+
+            };
+
+
+        },
+        /**
+         * Function to add/remove genre from selected movie
+         */
+        saveMovieEdits: () => {
+            //Set variables to option values
+            const toRemove = document.getElementById("rmvGenre").value;
+            const toAdd = document.getElementById("addGenre").value;
+            const movieTitle = document.getElementById("selMovElem").value;
+
+            //Array.prototype.filter() method to check if the objects prototype value title 
+            //is the same as movieTitle. Saves the correct object in the movieToEdit variable
+
+            const movieToEdit = movies.filter((movie) =>
+                movie.title == movieTitle
+            );
+
+            for (prop in movieToEdit) {
+                let genArr = movieToEdit[prop].genres;
+                for (let i = 0; i < genArr.length; i++) {
+                    //If statement to check if the genre value is same as toAdd then return
+                    if (genArr[i] === toAdd) {
+                        return;
+                    }
+                }
+                //Else push the new value into selected object.prototype.genres array
+                movieToEdit[prop].genres.push(toAdd);
+            }
+            for (prop in movieToEdit) {
+                let genArr = movieToEdit[prop].genres;
+                for (let i = 0; i < genArr.length; i++) {
+                    //If statement to check if the genre value is same as toRemove then splice() method to remove 
+                    //index from selected object.prototype.genres array
+                    if (genArr[i] === toRemove) {
+                        movieToEdit[prop].genres.splice(i, 1);
+
+                    }
+
+                }
+            }
+            MovieDataBase.getSelMovieGenres();
+            MovieDataBase.updateMovie();
+            const editForm = document.getElementById("editMovieForm");
+            editForm.reset();
         }
     };
-
 })();
