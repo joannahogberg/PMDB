@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Montserrat" rel="stylesheet">
     <title>PMD</title>
@@ -114,7 +114,7 @@
                 </nav>
 
                 <!--</div>-->
-                <form id="selectMovies" method="post">
+                <form id="selectMovies">
                     <label>Search by gengre</label>
                     <select name="genres" id="genres" onChange="window.location.href=this.value">
                         <option value="" selected disabled>Genres</option>
@@ -215,7 +215,7 @@
                 <p>If you wish to rate or change genres of a movie just do it!</p>
                 <label for="selMovElem">Select Movie to edit:</label>
                 <select id="selMovElem" name="selMovElem" onchange="MovieDataBase.getSelMovieGenres()">
-                    <option  >Select Movie</option>
+                    <option selected disabled >Select Movie</option>
 		</select>
                 <p id="movToEdit"></p>
                 <label for="addGenre">Add Genre

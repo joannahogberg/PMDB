@@ -26,6 +26,12 @@ html {
     -webkit-text-size-adjust: 100%;
 }
 
+input,
+select,
+textarea {
+    font-size: 16px;
+}
+
 
 /* height to 100%, margin to 0% to create sticky footer */
 
@@ -76,6 +82,7 @@ header {
     @include flexbox;
     @include flex-direction(column);
     @include align-items(center);
+    background: $red;
     @include transparent-backgound($red, 0.9);
     width: 100vw;
     margin: 0 auto;
