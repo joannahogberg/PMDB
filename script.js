@@ -319,7 +319,7 @@ const MovieDataBase = (function() {
         movieConstructor: function(title, year, genres, ratings, descript, img) {
             this.title = title;
             this.year = year;
-            this.genres = [genres];
+            this.genres = genres;
             this.ratings = [ratings];
             this.descript = descript;
             this.img = img;
@@ -356,19 +356,24 @@ const MovieDataBase = (function() {
                 }
                 return addedGenres;
             };
-            let genInput = getGenresFromCheckbox([]);
+            let genInput = getGenresFromCheckbox();
             let rateInput = document.getElementById('ratings').value;
             let descInput = document.getElementById('description').value;
             let imgUrlInput = document.getElementById('imgUrl').value;
 
             //Creates a new object with prototype of movieConstructor
-            const newMovie = new MovieDataBase.movieConstructor(titleInput, yearInput, [genInput], rateInput, descInput, imgUrlInput);
+            const newMovie = new MovieDataBase.movieConstructor(titleInput, yearInput, genInput, rateInput, descInput, imgUrlInput);
 
+
+            console.log(newMovie);
             /**
              * Call addNewMovie function with parameter
              * @param  {Object}        New movie object
              */
             MovieDataBase.addNewMovie(newMovie);
+            // MovieDataBase.getMovies();
+            MovieDataBase.saveMovieEdits();
+            MovieDataBase.updateMovie();
 
 
             //Displays the new movie to interface
@@ -662,7 +667,7 @@ ${ratinScale}
             for (prop in thisMovie) {
                 thisMovie[prop].ratings.push(parseInt(value));
             }
-            alert(value);
+
 
         },
 
@@ -670,8 +675,8 @@ ${ratinScale}
          * Sets the option values for the selMovElem
          */
         updateMovie: () => {
-            // let selElem = document.getElementById("selMovElem");
-            // selElem.innerHTML = `<option value="" selected disabled>Select Movie</option>`;
+
+            selElem.innerHTML = `<option value="" selected disabled>Select Movie</option>`;
             movToEditElem.innerHTML = "";
             //Array.prototype.filter() method to loop through the movies array and set the
             //option values to the movies.prototype.title
@@ -751,6 +756,7 @@ ${ratinScale}
             }
             MovieDataBase.getSelMovieGenres();
             MovieDataBase.updateMovie();
+
             const editForm = document.getElementById("editMovieForm");
             editForm.reset();
         }
