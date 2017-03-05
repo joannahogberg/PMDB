@@ -15,7 +15,6 @@ sans-serif;
     line-height: 1;
     font-size: 16px;
     font-weight: 400;
-    color: black;
 }
 
 @mixin head-1 {
@@ -46,6 +45,21 @@ sans-serif;
 @mixin head-6 {
     @include heading;
     font-size: 0.5em;
+}
+
+
+/*------------- Breakpoints mixin*/
+
+$breakpoints: ( 'xxsmall': ( min-width: 360px), 'xsmall': ( min-width: 375px), 'small': ( min-width: 464px), 'medium': ( min-width: 650px), 'large': ( min-width: 800px), 'xlarge': ( min-width: 1200px));
+@mixin breakpoint($name) {
+    @if map-has-key($breakpoints, $name) {
+        @media #{inspect(map-get($breakpoints, $name))} {
+            @content;
+        }
+    }
+    @else {
+        @warn "No breakpoint with this name `#{$name}`.";
+    }
 }
 
 
@@ -116,6 +130,14 @@ sans-serif;
     -moz-align-self: $align;
     -ms-align-self: $align;
     align-self: $align;
+}
+
+// nowrap | wrap | wrap-reverse
+@mixin flex-wrap($wrap) {
+    -webkit-flex-wrap: $wrap;
+    -moz-flex-wrap: $wrap;
+    -ms-flex-wrap: $wrap;
+    flex-wrap: $wrap;
 }
 
 

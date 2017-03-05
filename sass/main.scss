@@ -6,11 +6,8 @@ html,
 body,
 div,
 header,
-nav,
 section,
 footer,
-article,
-figure,
 form {
     margin: 0;
     padding: 0;
@@ -18,7 +15,6 @@ form {
 
 // For browsers without HTML5 support
 html,
-nav,
 main,
 section,
 footer {
@@ -49,44 +45,41 @@ body {
 }
 
 .wrapper {
-    @include flexbox;
+    // @include flexbox;
+    @include flex-center;
     /* flex-grow 1 to create sticky footer for flexbox*/
     @include flex-grow(1);
     @include flex-direction(column);
-    @include align-items(center);
-    @include justify-content(center);
-    width: 90vw;
-    // max-width: 1000px;
+    width: 100%;
     height: auto;
     margin: 0 auto;
     background: $red;
     table-layout: fixed;
-    overflow-x: hidden;
     position: relative;
 }
 
 // Styles for logo
 #joanna {
     @include flexbox;
-    height: 5em;
-    width: 90vw;
-    max-width: 1000px;
+    height: 3em;
+    width: 50%;
     margin: 0 auto;
-    margin: 2em 0.5em 0.5em;
+    margin: 1.5em 0.5em 0.5em;
     z-index: 9;
+    display: none;
+    @include breakpoint(large) {
+        display: inherit;
+    }
 }
 
 header {
     @include flexbox;
     @include flex-direction(column);
     @include align-items(center);
-    // background: $red;
     @include transparent-backgound($red, 0.9);
-    width: 100%;
-    // max-width: 1000px;
-    height: 20em;
+    width: 100vw;
     margin: 0 auto;
-    // z-index: 13;
+    z-index: 100;
     padding-bottom: 1.5em;
     position: fixed;
     top: 0;
@@ -95,87 +88,175 @@ header {
     // }
 }
 
+.logo {
+    @include flexbox;
+    @include flex-direction(row);
+    margin-bottom: -1.5em;
+}
+
 header h1 {
     @include flexbox;
     @include head-1;
     font-weight: 100;
-    margin: 0.4em 0 0.4em;
-    padding: 0.5em;
-    z-index: 7;
+    margin: 0;
+    width: 100%;
+    padding: 0.5em 0 0;
+    text-align: center;
+    @include breakpoint(large) {
+        width: 50%;
+        padding: 0.5em;
+    }
 }
 
-#displayMovies {
+h2 {
+    color: $celeste;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid $celeste;
+    text-align: center;
+    margin: 0;
+}
+
+#displayMovies,
+#displayMoviesByGenre {
     @include flexbox;
     @include flex-direction(column);
     @include justify-content(center);
-    width: 50vw;
-    margin-top: 26em;
+    z-index: 10;
+    background: $red;
+    width: 80vw;
+    margin: 0 auto;
     margin-bottom: 2em;
+    @include breakpoint(large) {
+        width: 90vw;
+    }
 }
 
 #displayNewMovie {
     @include flexbox;
     @include flex-direction(column);
     @include justify-content(center);
-    width: 50vw;
-    margin-top: 2em;
-    margin-bottom: 2em;
-}
-
-.image {
-    @include flexbox;
-    @include border-radius (2%);
+    margin: 0 auto;
+    margin-top: -16em;
+    margin-bottom: 3em;
+    z-index: 1;
 }
 
 .selectElems {
-    @include flexbox;
-    @include flex-direction(row);
+    @include flex-center;
+    @include flex-direction(column);
+    margin: 0;
     padding: 1em;
 }
 
-button {
+button,
+.nav_link,
+.submit {
     padding: 0.5em 1em 0.5em;
-    font-size: 1em;
-    margin: 0.5em;
-    @include transparent-backgound($red, 0);
+    font-size: 0.7em;
+    margin: 0 0.5em 0.5em;
+    background: $red;
     border: 2px solid black;
     color: black;
     cursor: pointer;
+    text-decoration: none;
     @include border-radius (5px);
     &:hover {
         color: $celeste;
         border: 2px solid $celeste;
     }
+    @include breakpoint(medium) {
+        font-size: 1em;
+    }
 }
 
-label {
-    @include head-3;
+.submit {
+    margin: 0.7em 0 0.5em;
 }
 
-.addMovieSection {
-    @include flexbox;
+.five {
+    margin-right: 0.5em;
+}
+
+.header_nav {
+    @include flex-center;
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
+    padding: 1em;
+}
+
+.displayMovieDiv {
+    @include flex-center;
     @include flex-direction(column);
+}
+
+.addMovieSection,
+#editMovieForm {
+    @include flex-center;
+    @include flex-direction(column);
+    margin-top: 22em;
+    width: 80vw;
+    padding: 3em;
+    border: 10px solid $celeste;
+    @include breakpoint(small) {
+        margin-top: 17em;
+    }
+    @include breakpoint(medium) {
+        margin-top: 21em;
+    }
+    @include breakpoint(large) {
+        margin-top: 20em;
+    }
+}
+
+#addMovieSec {
+    z-index: 99;
 }
 
 .addGenresDiv {
-    margin: 0.5em;
+    @include flexbox;
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
+    font-size: 0.9em;
+    margin: -1.5em 0 0;
 }
 
-.addForm {
+#addForm {
     @include flexbox;
     @include flex-direction(column);
-    border: 10px solid $celeste;
-    padding: 3em;
+    padding: 1em 3em 1em;
 }
 
-input.genres {
-    padding: 3em;
+.addGenresDiv label {
+    @include flex-center;
+}
+
+#addGenre,
+#rmvGenre {
+    margin: 0 0 2em;
+}
+
+#selMovElem {
+    margin: 1em 0 0;
+}
+
+#movToEdit {
     margin: 0.5em;
-    text-align: center;
+    color: $celeste;
+}
+
+.genres {
+    @include flexbox;
+    margin: 0 1em 0 0.5em;
 }
 
 #ratings {
     width: 5em;
+}
+
+select,
+input {
+    border: 1.5px solid $celeste;
+    // margin: 1em;
 }
 
 #addMovieBtn {
@@ -185,19 +266,66 @@ input.genres {
     margin: 1.5em 0 0.5em;
 }
 
-.addForm label {
+#addForm label {
     margin: 1em 0 0.5em;
     font-size: 1.2em;
     color: black;
 }
 
-.movieDiv {
+.movieDiv,
+.NewMovieDiv {
+    @include flexbox;
+    @include flex-direction(row);
+    background: white;
     @include transparent-backgound(white, 0.2);
     border: 10px solid $celeste;
-    margin: 0.5em;
-    padding: 3em;
+    margin-bottom: 1.5em;
+    padding: 1em;
+    // width: 80vw;
+    &:first-child {
+        margin-top: 20em;
+    }
+    &:last-child {
+        margin-bottom: -18em;
+    }
+    @include breakpoint(medium) {
+        padding: 3em;
+    }
 }
 
-.addMovieSection {
-    @include flex-center;
+.movieDiv p,
+.NewMovieDiv p {
+    margin: 0 0 0.5em;
+}
+
+.NewMovieDiv {
+    margin-bottom: -13em;
+}
+
+.movieElems {
+    @include flexbox;
+    @include flex-direction(column);
+    -webkit-flex: 2 0 0;
+    flex: 2 0 0;
+    margin: 0.5em;
+}
+
+.movieImg {
+    display: none;
+    @include breakpoint(medium) {
+        display: inherit;
+        @include flexbox;
+        -webkit-flex: 1 0 0;
+        flex: 1 0 0;
+        height: 15em;
+        align-content: flex-end;
+        & :first-child {
+            margin-left: auto;
+            width: 11em;
+        }
+    }
+}
+
+.hideLogo {
+    display: none;
 }
