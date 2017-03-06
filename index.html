@@ -212,15 +212,26 @@
         <div class="editMovieDiv" id="editMovie">
             <form id="editMovieForm">
                 <h2>Change genres of a movie in the DataBase</h2>
-                <p>If you wish to rate or change genres of a movie just do it!</p>
+                <h4>If you want to update a movie feel free to use this form</h4>
                 <label for="selMovElem">Select Movie to edit:</label>
                 <select id="selMovElem" name="selMovElem" onchange="MovieDataBase.getSelMovieGenres()">
                     <option selected disabled >Select Movie</option>
-		</select>
-                <p id="movToEdit"></p>
-                <label for="addGenre">Add Genre
+		        </select>
+                <!--<p id="movToEdit"></p>-->
+
+                <!--<label for="updateTitle">Edit Movie Title:</label>-->
+                <input class="editInfo" id="updateTitle" type="text" value="" placeholder="Movie Title">
+                <!--<label for="updateYear">Edit Release Year:</label>-->
+                <input class="editInfo" id="updateYear" type="number" value="" placeholder="Release Year">
+                <!--<label for="updateDescription">Edit Movie Description:</label>-->
+
+                <textarea class="editInfo" id="updateDescription" rows="" cols="" placeholder="Movie Description"></textarea>
+                <!--<label for="updateUrl">Edit Image URL:</label>-->
+                <input class="editInfo" id="updateUrl" type="text" placeholder="Image URL">
+
+                <label for="addGenre">Add Genre:
                 <select id="addGenre" name="genre">
-                    <option value="" selected disabled>Genres</option>
+                        <option value="" selected disabled>Genres</option>
 			            <option value="Action">Action</option>
 						<option value="Adventure">Adventure</option>
 						<option value="Animation">Animation</option>
@@ -233,13 +244,13 @@
 						<option value="Romance">Romance</option>
                         <option value="Sci-Fi">Sci-Fi</option>
                         <option value="Thriller">Thriller</option>
-		</select>
-</label>
-                <label for="rmvGenre">Remove Genre
+		        </select>
+                </label>
+                <label for="rmvGenre">Remove Genre:
                 <select id="rmvGenre" name="genre">
-                    <option value="" selected disabled>Genres</option>
-		
-		</select></label>
+                        <option value="" selected disabled>Genres</option>
+		        </select>
+                </label>
                 <button id="editMovieBtn" type="button" name="button">SAVE MY INPUT</button>
             </form>
 

@@ -8,7 +8,6 @@ The Object prototype constructor returns a reference to the Object constructor f
 out on this and find it easy to understand how the new Object gets created using the constructor.
 By using this type of constructor I'm setting the new Objects prototype to an instance of the constructor, so that 
 new Object inherits all of the properties that the constructor contains.
-
 github: https://github.com/joannahogberg/PMDB
 link: https://joannahogberg.github.io/PMDB
 */
@@ -684,7 +683,9 @@ ${ratinScale}
 
             selElem.innerHTML = `<option value="" selected disabled>Select Movie</option>`;
 
-            movToEditElem.innerHTML = "";
+            // movToEditElem.innerHTML = "";
+
+
             //Array.prototype.filter() method to loop through the movies array and set the
             //option values to the movies.prototype.title
             return movies.filter((movie) =>
@@ -703,13 +704,25 @@ ${ratinScale}
             const optionVal = document.getElementById("selMovElem").value;
 
             //Object literal to set the movToEditElem.innerHTML to be the selected movie title
-            movToEditElem.innerHTML = `${optionVal}`;
+            // movToEditElem.innerHTML = `${optionVal}`;
+
+
 
             //Array.prototype.filter() method to check if the objects prototype value title 
             //is the same as optionVal. Saves the correct object in the selMovie variable
             const selMovie = movies.filter((movie) =>
                 movie.title == optionVal
             );
+
+
+            for (prop in selMovie) {
+                console.log(selMovie[prop].title, selMovie[prop].year, selMovie[prop].descript, selMovie[prop].img);
+                document.getElementById("updateTitle").value = selMovie[prop].title;
+                document.getElementById("updateYear").value = selMovie[prop].year;
+                document.getElementById("updateDescription").value = selMovie[prop].descript;
+                document.getElementById("updateUrl").value = selMovie[prop].img;
+
+            }
 
             for (prop in selMovie) {
                 let genreList = selMovie[prop].genres;
@@ -762,6 +775,19 @@ ${ratinScale}
 
                 }
             }
+
+
+            for (prop in movieToEdit) {
+
+                movieToEdit[prop].title = document.getElementById("updateTitle").value;
+                movieToEdit[prop].year = document.getElementById("updateYear").value;
+                movieToEdit[prop].descript = document.getElementById("updateDescription").value;
+                movieToEdit[prop].img = document.getElementById("updateUrl").value;
+
+                console.log(movieToEdit[prop].title, movieToEdit[prop].year, movieToEdit[prop].descript, movieToEdit[prop].img);
+
+
+            }
             MovieDataBase.getSelMovieGenres();
             MovieDataBase.updateMovie();
 
@@ -773,3 +799,10 @@ ${ratinScale}
 
 
 // document.getElementById("selMovElem").selectedIndex = null;
+
+
+
+// for (prop in movieToEdit) {
+//     console.log(movieToEdit[prop].title, movieToEdit[prop].year, movieToEdit[prop].descript);
+
+// }

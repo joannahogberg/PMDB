@@ -238,7 +238,11 @@ button,
 #addForm {
     @include flexbox;
     @include flex-direction(column);
+    width: 95vw;
     padding: 1em;
+    @include breakpoint(small) {
+        width: 70%;
+    }
     @include breakpoint(medium) {
         padding: 3em;
     }
@@ -252,14 +256,14 @@ button,
 }
 
 #addGenre,
-#rmvGenre {
-    margin: 0 0 2em;
-}
-
+#rmvGenre,
 #selMovElem {
-    margin: 1em 0 0;
+    margin: 0.5em 0 0.5em;
 }
 
+// #selMovElem {
+//     margin: 1em 0 0;
+// }
 #movToEdit {
     margin: 0.5em;
     color: $celeste;
@@ -277,13 +281,29 @@ button,
 select,
 input {
     border: 1.5px solid $celeste;
-    // margin: 1em;
 }
 
-#addMovieBtn {
+.editInfo {
+    padding: 0.3em;
+    width: 90vw;
+    margin: 0.5em 0 0.5em;
+    color: slategray;
+    @include breakpoint(small) {
+        width: 70%;
+    }
+    @include breakpoint(xlarge) {
+        width: 700px;
+    }
+}
+
+#addForm input {
+    padding: 0.3em;
+}
+
+#addMovieBtn,
+#editMovieBtn {
     @include flex-center;
     @include align-self(center);
-    width: 10em;
     margin: 1.5em 0 0.5em;
 }
 
@@ -300,7 +320,7 @@ input {
     background: white;
     @include transparent-backgound(white, 0.2);
     border: 10px solid $celeste;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
     padding: 1em;
     @include breakpoint(small) {
         &:first-child {
@@ -309,9 +329,6 @@ input {
         &:last-child {
             margin-bottom: -18em;
         }
-    }
-    @include breakpoint(medium) {
-        padding: 3em;
     }
 }
 
@@ -330,8 +347,7 @@ input {
 .movieElems {
     @include flexbox;
     @include flex-direction(column);
-    -webkit-flex: 2 0 0;
-    flex: 2 0 0;
+    @include flex(2 0 0);
     margin: 0.5em;
 }
 
@@ -340,8 +356,7 @@ input {
     @include breakpoint(medium) {
         display: inherit;
         @include flexbox;
-        -webkit-flex: 1 0 0;
-        flex: 1 0 0;
+        @include flex(1 0 0);
         height: 15em;
         align-content: flex-end;
         & :first-child {
