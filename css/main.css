@@ -419,9 +419,11 @@ button,
   align-items: center; }
 
 #addGenre,
-#rmvGenre,
-#selMovElem {
+#rmvGenre {
   margin: 0.5em 0 0.5em; }
+
+#selMovElem {
+  margin: 0; }
 
 #movToEdit {
   margin: 0.5em;
@@ -436,7 +438,7 @@ button,
   margin: 0 1em 0 0.5em; }
 
 #ratings {
-  width: 5em; }
+  width: 7em; }
 
 select,
 input {
@@ -445,7 +447,7 @@ input {
 .editInfo {
   padding: 0.3em;
   width: 90vw;
-  margin: 0.5em 0 0.5em;
+  margin: 0 0 1em;
   color: slategray; }
   @media (min-width: 464px) {
     .editInfo {
