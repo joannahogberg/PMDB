@@ -83,7 +83,8 @@ body {
   margin: 0 auto;
   background: #9C2542;
   table-layout: fixed;
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
 
 #joanna {
   display: -webkit-box;
