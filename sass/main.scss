@@ -48,6 +48,7 @@ body {
     font-size: 16px;
     background: $red;
     font-family: $text-font;
+    overflow-x: hidden;
 }
 
 .wrapper {
@@ -129,11 +130,11 @@ h2 {
     @include justify-content(center);
     z-index: 10;
     background: $red;
-    width: 80vw;
+    width: 95vw;
     margin: 0 auto;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     @include breakpoint(large) {
-        width: 90vw;
+        width: 70vw;
     }
 }
 
@@ -142,7 +143,6 @@ h2 {
     @include flex-direction(column);
     @include justify-content(center);
     margin: 0 auto;
-    // margin-top: -16em;
     margin-bottom: 3em;
     z-index: 1;
     @include breakpoint(small) {
@@ -203,8 +203,8 @@ button,
     @include flex-center;
     @include flex-direction(column);
     margin-top: 2em;
-    width: 80vw;
-    padding: 3em;
+    width: 95vw;
+    padding: 1em;
     border: 10px solid $celeste;
     @include breakpoint(small) {
         margin-top: 17em;
@@ -214,6 +214,7 @@ button,
     }
     @include breakpoint(large) {
         margin-top: 20em;
+        width: 80vw;
     }
 }
 
@@ -236,7 +237,13 @@ button,
 #addForm {
     @include flexbox;
     @include flex-direction(column);
-    padding: 1em 3em 1em;
+    padding: 1em;
+    @include breakpoint(medium) {
+        padding: 3em;
+    }
+    @include breakpoint(xlarge) {
+        width: 700px;
+    }
 }
 
 .addGenresDiv label {

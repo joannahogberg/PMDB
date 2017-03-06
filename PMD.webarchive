@@ -1,0 +1,1645 @@
+bplist00“_WebMainResource_WebSubresources’	
+_WebResourceMIMEType_WebResourceTextEncodingName^WebResourceURL_WebResourceFrameName_WebResourceDataYtext/htmlUUTF-8_7file:///Users/joahog/Desktop/PMD/index.html#addMovieSecPO=À<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Montserrat" rel="stylesheet">
+    <title>PMD</title>
+</head>
+
+
+<body>
+    <div class="wrapper">
+
+
+
+
+
+        <header class="header" id="scroll">
+            <div class="logo" id="logo">
+
+                <h1>Pattis MovieDataBase</h1>
+                <svg id="joanna" data-name="joanna" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 94.04 38.05"><defs>
+ <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(0,0,0);stop-opacity:0">
+	  <animate attributeName="stop-opacity" values="0; 1" begin="middle1.end" dur="1s" fill="freeze"></animate>
+	  </stop>
+	  <stop offset="25%" style="stop-color:rgb(0,0,0);stop-opacity:0">
+	   <animate attributeName="stop-opacity" values="0; 1" begin="1000ms" dur="1s" id="middle1" fill="freeze"></animate></stop>
+	   <stop offset="50%" style="stop-color:rgb(0,0,0);stop-opacity:0">
+	   <animate attributeName="stop-opacity" values="0; 1" begin="500ms" dur="1s" id="middle" fill="freeze"></animate></stop>
+      <stop offset="100%" style="stop-color:rgb(0,0,0);stop-opacity:0">
+	  <animate attributeName="stop-opacity" values="0; 1" dur="1s" id="down" fill="freeze"></animate></stop>
+    </linearGradient>
+
+                <style>
+                    .cls-1 {
+                        isolation: isolate;
+                    }
+                    
+                    .cls-2 {
+                        fill: #49fee3;
+                    }
+                </style>
+                </defs>
+                <title>joanna_logo</title>
+                <g class="cls-1">
+                    <path d="M9,40.49a4.36,4.36,0,0,1-3.77,1.84,4.89,4.89,0,0,1-2.83-.91A7.86,7.86,0,0,1,.09,38.8L.5,38.3a7.25,7.25,0,0,0,2.12,2.46,4.45,4.45,0,0,0,2.59.84A3.84,3.84,0,0,0,8.56,40a8.16,8.16,0,0,0,1.15-4.73V17.88H2v-.72h8.33V35.25A8.91,8.91,0,0,1,9,40.49Z" transform="translate(-0.09 -16.34)"></path>
+                </g>
+                <g class="cls-1" fill="url(#grad1)">
+                    <path d="M22.59,20.26a8.24,8.24,0,0,1,3.06,2.94,7.69,7.69,0,0,1,1.13,4.08,7.77,7.77,0,0,1-1.13,4.1,8.25,8.25,0,0,1-3.06,3,8.79,8.79,0,0,1-8.48,0,8.24,8.24,0,0,1-3.06-3,8,8,0,0,1,0-8.19,8.13,8.13,0,0,1,3.06-2.93,8.62,8.62,0,0,1,4.26-1.07A8.48,8.48,0,0,1,22.59,20.26Zm-7.5,1.52a6.64,6.64,0,0,0-2.4,2.3,5.94,5.94,0,0,0-.9,3.19,6,6,0,0,0,.9,3.21,6.63,6.63,0,0,0,5.68,3.16A6.54,6.54,0,0,0,24,30.49a6.07,6.07,0,0,0,.89-3.21A6,6,0,0,0,24,24.08a6.58,6.58,0,0,0-2.38-2.3,6.45,6.45,0,0,0-3.26-.85A6.53,6.53,0,0,0,15.09,21.79Z" transform="translate(-0.09 -16.34)"></path>
+                </g>
+                <g class="cls-1">
+                    <path d="M28.54,26.55,26,31h-.64l8.37-14.68h.57L42.78,31h-.6l-2.55-4.47ZM34,16.83l-5.25,9.3H39.39Z" transform="translate(-0.09 -16.34)"></path>
+                </g>
+                <g class="cls-1">
+                    <g class="cls-1">
+                        <path d="M54.59,37,42.75,20.68V37h-.48V20.2H43L54.82,36.5V20.2h.48V37Z" transform="translate(-0.09 -16.34)"></path>
+                    </g>
+                    <g class="cls-1">
+                        <path d="M66.88,33.78,55.28,18.83V33.78h-.47V18.39h.71L67.11,33.34V18.39h.47V33.78Z" transform="translate(-0.09 -16.34)"></path>
+                    </g>
+                </g>
+                <g class="cls-1">
+                    <path class="cls-2" d="M70.16,29.18l-2.61,4.68H66.9l8.64-15.38h.59l8.73,15.38h-.62l-2.63-4.68ZM75.83,19l-5.41,9.74H81.36Z" transform="translate(-0.09 -16.34)"></path>
+                </g>
+                <g class="cls-1">
+                    <path d="M25.3,49.19l0-8.91-15-.06,0,8.91h-.6l.08-18.18h.6l0,8.75,15,.06,0-8.75H26L25.9,49.19Z" transform="translate(-0.09 -16.34)"></path>
+                </g>
+                <g class="cls-1">
+                    <path class="cls-2" d="M38.53,32.27a8.58,8.58,0,0,1,3.15,3.06,8.1,8.1,0,0,1,0,8.37,8.69,8.69,0,0,1-3.15,3.07,8.69,8.69,0,0,1-8.61,0,8.69,8.69,0,0,1-3.15-3.07,8.11,8.11,0,0,1,0-8.38,8.74,8.74,0,0,1,11.76-3.06Zm-8.36.42a8.23,8.23,0,0,0-3,2.88,7.42,7.42,0,0,0-1.11,3.94,7.51,7.51,0,0,0,1.11,4,8.14,8.14,0,0,0,3,2.89,8.24,8.24,0,0,0,8.11,0,8.14,8.14,0,0,0,3-2.89,7.51,7.51,0,0,0,1.11-4,7.42,7.42,0,0,0-1.11-3.94,8.23,8.23,0,0,0-3-2.88,8.2,8.2,0,0,0-8.11,0Zm2.71-5.57a.6.6,0,0,1,.18.44.61.61,0,0,1-.18.43.59.59,0,0,1-.45.19A.6.6,0,0,1,32,28a.59.59,0,0,1-.19-.43.58.58,0,0,1,.19-.45.62.62,0,0,1,.43-.18A.61.61,0,0,1,32.88,27.13Zm3.6,0a.6.6,0,0,1,.18.44.61.61,0,0,1-.18.43.59.59,0,0,1-.45.19A.6.6,0,0,1,35.6,28a.59.59,0,0,1-.19-.43.58.58,0,0,1,.19-.45.62.62,0,0,1,.43-.18A.61.61,0,0,1,36.47,27.13Z" transform="translate(-0.09 -16.34)"></path>
+                </g>
+                <g class="cls-1">
+                    <path d="M54.6,48.57A8.56,8.56,0,0,1,52,50.18a8.4,8.4,0,0,1-7.28-.57,8.6,8.6,0,0,1-3.08-3.07,8.25,8.25,0,0,1,0-8.38,8.5,8.5,0,0,1,3.08-3.06A8.45,8.45,0,0,1,52,34.54a8.51,8.51,0,0,1,2.59,1.6l-.3.3a8,8,0,0,0-5.34-2,7.79,7.79,0,0,0-4,1.07A8.1,8.1,0,0,0,42,38.39a7.59,7.59,0,0,0-1.09,4,7.68,7.68,0,0,0,1.09,4,8,8,0,0,0,2.92,2.91,8,8,0,0,0,9.19-.86V42.52h.47Z" transform="translate(-0.09 -16.34)"></path>
+                </g>
+                <g class="cls-1">
+                    <path d="M65.47,43.28a2.39,2.39,0,0,1,1.45,2.17A2.23,2.23,0,0,1,66,47.29a5.21,5.21,0,0,1-2.64.91,7,7,0,0,1,3.34,1,2.37,2.37,0,0,1,1.19,2.05,2.58,2.58,0,0,1-1.7,2.35,11,11,0,0,1-4.76.83H54.16V42.5h7.27A8.69,8.69,0,0,1,65.47,43.28Zm-10.8,4.79h6.75a8.1,8.1,0,0,0,3.68-.68,2.08,2.08,0,0,0,0-3.86,8.09,8.09,0,0,0-3.68-.68H54.67Zm0,6h6.75a10.45,10.45,0,0,0,4.4-.75,2.32,2.32,0,0,0,1.56-2.11,2.27,2.27,0,0,0-1.56-2.08,10.67,10.67,0,0,0-4.4-.73H54.67Z" transform="translate(-0.09 -16.34)"></path>
+                </g>
+                <g class="cls-1">
+                    <path d="M67.73,37.93v5.56h9v.36h-9v5.94H78.18v.36H67.24V37.57h10.6v.36Z" transform="translate(-0.09 -16.34)"></path>
+                </g>
+                <g class="cls-1">
+                    <path d="M88.43,36.25a5.9,5.9,0,0,1-3.24,1.53l4.37,5H89l-4.3-4.88c-.65.05-1.16.08-1.55.08H77.85v4.8h-.49v-14h5.74a8.18,8.18,0,0,1,4.76,1.19,3.86,3.86,0,0,1,1.69,3.35A4,4,0,0,1,88.43,36.25Zm-.91.18a3.63,3.63,0,0,0,1.56-3.13,3.5,3.5,0,0,0-1.56-3.06,7.68,7.68,0,0,0-4.41-1.08H77.85v8.39h5.26A7.5,7.5,0,0,0,87.52,36.43Z" transform="translate(-0.09 -16.34)"></path>
+                </g>
+                <g class="cls-1" fill="url(#grad1)">
+                    <path d="M94.08,41.76v6.09a10.4,10.4,0,0,1-2.93,1.61,9.69,9.69,0,0,1-3.32.6,8.74,8.74,0,0,1-4.4-1.14,8.65,8.65,0,0,1-3.18-3.08,8.1,8.1,0,0,1-1.18-4.28,8,8,0,0,1,1.18-4.26,8.56,8.56,0,0,1,3.22-3.06,9.05,9.05,0,0,1,4.46-1.13,9.36,9.36,0,0,1,3.35.62,9.12,9.12,0,0,1,2.84,1.69L93,36.87a7.73,7.73,0,0,0-2.37-1.43,7.49,7.49,0,0,0-2.72-.52,7,7,0,0,0-3.48.88A6.7,6.7,0,0,0,82,38.22a6.51,6.51,0,0,0,0,6.71,6.83,6.83,0,0,0,2.52,2.43,7,7,0,0,0,3.48.89,7.35,7.35,0,0,0,2.28-.37,8.42,8.42,0,0,0,2.14-1V41.76Z" transform="translate(-0.09 -16.34)"></path>
+                </g>
+                </svg>
+
+
+
+
+            </div>
+
+            <div class="selectElems">
+                <nav class="header_nav">
+                    <a href="#displayMovies" class="nav_link" id="showMovieBtn">SHOW ALL MOVIES</a>
+                    <a href="#displayMovies" class="nav_link" id="topMovieBtn">SHOW HIGHEST RATED MOVIE</a>
+                    <a href="#displayMovies" class="nav_link" id="worstMovieBtn">SHOW LOWEST RATED MOVIE</a>
+                    <a href="#displayMovies" class="nav_link" id="thisYearMovieBtn">SHOW THIS YEARS MOVIES</a>
+
+                    <a href="#addMovieSec" class="nav_link">ADD MOVIE</a>
+                    <a href="#editMovie" class="nav_link">EDIT MOVIES</a>
+
+
+                </nav>
+
+                <!--</div>-->
+                <form id="selectMovies">
+                    <label>Search by gengre</label>
+                    <select name="genres" id="genres" onchange="window.location.href=this.value">
+                        <option value="" selected="" disabled="">Genres</option>
+						<option value="#displayMoviesByGenre" label="Action">Action</option>
+						<option value="#displayMoviesByGenre" label="Adventure">Adventure</option>
+						<option value="#displayMoviesByGenre" label="Animation">Animation</option>
+                        <option value="#displayMoviesByGenre" label="Biography">Biography</option>
+						<option value="#displayMoviesByGenre" label="Comedy">Comedy</option>
+                        <option value="#displayMoviesByGenre" label="Crime">Crime</option>
+						<option value="#displayMoviesByGenre" label="Drama">Drama</option>
+						<option value="#displayMoviesByGenre" label="Kids">Kids</option>
+						<option value="#displayMoviesByGenre" label="Musical">Musical</option>
+						<option value="#displayMoviesByGenre" label="Romance">Romance</option>
+                        <option value="#displayMoviesByGenre" label="Sci-Fi">Sci-Fi</option>
+                        <option value="#displayMoviesByGenre" label="Thriller">Thriller</option>
+		</select>
+
+                </form>
+                <!--<button id="editMovieBtn" type="button" name="button">EDIT MOVIES</button>-->
+            </div>
+        </header>
+
+        <!--<img class="image" src="" alt="">-->
+
+        <div class="displayMovieDiv">
+            <!--List to display movies-->
+            <section id="displayMovies">
+
+            </section>
+            <section id="displayMoviesByGenre">
+                <!--Div to display movies-->
+
+            </section>
+
+
+
+        </div>
+
+        <div id="addMovieSec">
+
+
+            <section class="addMovieSection">
+
+
+
+                <form id="addForm" action="index.html" method="post">
+                    <h2>Add Missing Movie to the DataBase</h2>
+                    <p>If you feel that a movie is missing feel free to add it yourself through this form.</p>
+
+                    <label for="title">Movie Title:</label>
+                    <input id="title" type="text" name="title" value="">
+                    <label for="year">Release year:</label>
+                    <input id="year" type="text" name="year" value="">
+
+                    <label for="genres">Add genres:</label><br>
+                    <div class="addGenresDiv">
+
+                        <label>Action  <input class="genres" type="checkbox" value="Action"></label>
+                        <label> Adventure  <input class="genres" type="checkbox" value="Adventure"> </label>
+                        <label> Animation  <input class="genres" type="checkbox" value="Animation"> </label>
+                        <label> Biography <input class="genres" type="checkbox" value="Biography"> </label>
+                        <label> Comedy  <input class="genres" type="checkbox" value="Comedy"> </label>
+                        <label> Crime  <input class="genres" type="checkbox" value="Crime"> </label>
+                        <label> Drama  <input class="genres" type="checkbox" value="Drama"> </label>
+                        <label> Kids  <input class="genres" type="checkbox" value="Kids"> </label>
+                        <label>  Musical  <input class="genres" type="checkbox" value="Musical"> </label>
+                        <label>  Romance  <input class="genres" type="checkbox" value="Romance"> </label>
+                        <label>  Sci-Fi  <input class="genres" type="checkbox" value="Sci-Fi">  </label>
+                        <label>  Thriller  <input class="genres" type="checkbox" value="Thriller"></label>
+                    </div>
+                    <label for="ratings">Add my rating:</label>
+                    <select id="ratings" name="ratings">
+                        <option value="" selected="" disabled="">Rating</option>
+                        <option value="5">5</option>
+						<option value="4">4</option>
+						<option value="3">3</option>
+                        <option value="2">2</option>
+						<option value="1">1</option>
+                        
+            </select>
+                    <label for="description">Movie Description:</label>
+                    <input id="description" type="text" name="description" value="" placeholder="Place movie decription">
+                    <label for="imgUrl">Image URL:</label>
+                    <input id="imgUrl" type="url" placeholder="Insert valid img-url">
+                    <button id="addMovieBtn" type="button" name="button">ADD MOVIE</button>
+                </form>
+
+
+            </section>
+        </div>
+        <div id="displayNewMovie">
+            <!--List to display newMovie-->
+        </div>
+
+        <div class="editMovieDiv" id="editMovie">
+            <form id="editMovieForm">
+                <h2>Change genres of a movie in the DataBase</h2>
+                <p>If you wish to rate or change genres of a movie just do it!</p>
+                <label for="selMovElem">Select Movie to edit:</label>
+                <select id="selMovElem" name="selMovElem" onchange="MovieDataBase.getSelMovieGenres()"><option value="" selected="" disabled="">Select Movie</option><option value="La La Land">La La Land</option><option value="One Flew Over The Cuckoo‚Äôs Nest">One Flew Over The Cuckoo‚Äôs Nest</option><option value="The Godfather">The Godfather</option><option value="The Lego Batman Movie">The Lego Batman Movie</option><option value="The Lion King">The Lion King</option><option value="Lion">Lion</option><option value="Taxi Driver">Taxi Driver</option><option value="The Warriors">The Warriors</option><option value="It">It</option><option value="Star Wars">Star Wars</option><option value="Moonlight">Moonlight</option><option value="Her">Her</option><option value="Walk The Line">Walk The Line</option><option value="Lars And The Real Girl">Lars And The Real Girl</option><option value="Blue Valentine">Blue Valentine</option><option value="Raging Bull">Raging Bull</option><option value="Million Dollar Baby">Million Dollar Baby</option><option value="Boys Don‚Äôt Cry">Boys Don‚Äôt Cry</option><option value="Gilbert Grape">Gilbert Grape</option><option value="The Wolf Of Wall Street">The Wolf Of Wall Street</option><option value="Wall-E">Wall-E</option><option value="21 Gram">21 Gram</option><option value="Despicable Me">Despicable Me</option><option value="Shrek">Shrek</option><option value="Get Hard">Get Hard</option></select>
+                <p id="movToEdit"></p>
+                <label for="addGenre">Add Genre
+                <select id="addGenre" name="genre">
+                    <option value="" selected="" disabled="">Genres</option>
+			            <option value="Action">Action</option>
+						<option value="Adventure">Adventure</option>
+						<option value="Animation">Animation</option>
+                        <option value="Biography">Biography</option>
+						<option value="Comedy">Comedy</option>
+                        <option value="Crime">Crime</option>
+						<option value="Drama">Drama</option>
+						<option value="Kids">Kids</option>
+						<option value="Musical">Musical</option>
+						<option value="Romance">Romance</option>
+                        <option value="Sci-Fi">Sci-Fi</option>
+                        <option value="Thriller">Thriller</option>
+		</select>
+</label>
+                <label for="rmvGenre">Remove Genre
+                <select id="rmvGenre" name="genre">
+                    <option value="" selected="" disabled="">Genres</option>
+		
+		</select></label>
+                <button id="editMovieBtn" type="button" name="button">SAVE MY INPUT</button>
+            </form>
+
+
+        </div>
+
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+
+
+</body></html>§‘_WebResourceResponseXtext/css_-file:///Users/joahog/Desktop/PMD/css/main.cssObplist00‘45X$versionX$objectsY$archiverT$top Ü†´%&,-./0U$null€	
+R$3V$classR$6R$1R$9R$4R$7R$2R$5R$0R$8ÄÄ
+Ä Ä	ÄÄ ÄÄ” 
+!#$WNS.base[NS.relativeÄ ÄÄ_-file:///Users/joahog/Desktop/PMD/css/main.css“'()*Z$classnameX$classesUNSURL¢)+XNSObject#Aæm@,(hòXtext/css.F#Ôˇˇˇˇˇˇ“'(12]NSURLResponse¢3+]NSURLResponse_NSKeyedArchiver—67_WebResourceResponseÄ    # - 2 7 C I ` c j m p s v y |  Ç Ö á â ã ç è ë ì ï ó ô õ ¢ ™ ∂ ∏ ∫ º Ï Ò ¸ ),5:HKYknÑ             8              ÜO.F/* Sass variables*/
+/*------------- Heading mixins*/
+/*------------- Breakpoints mixin*/
+/*------------- Flexbox mixins*/
+/*------------- Flexbox center mixin*/
+/* ---------------------- Preparing styles */
+html,
+body,
+div,
+header,
+section,
+footer,
+form {
+  margin: 0;
+  padding: 0; }
+
+html,
+main,
+section,
+footer {
+  display: block; }
+
+html {
+  -webkit-text-size-adjust: 100%; }
+
+input,
+select,
+textarea {
+  font-size: 16px; }
+
+/* height to 100%, margin to 0% to create sticky footer */
+html {
+  height: 100%; }
+
+body {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  min-height: 100%;
+  width: 100%;
+  font-size: 16px;
+  background: #9C2542;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden; }
+
+.wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  /* flex-grow 1 to create sticky footer for flexbox*/
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background: #9C2542;
+  table-layout: fixed;
+  position: relative; }
+
+#joanna {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  height: 3em;
+  width: 50%;
+  margin: 0 auto;
+  margin: 1.5em 0.5em 0.5em;
+  z-index: 9;
+  display: none; }
+  @media (min-width: 800px) {
+    #joanna {
+      display: inherit; } }
+
+header {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  background: #9C2542;
+  background: rgb(156, 37, 66);
+  background: rgba(156, 37, 66, 0.9);
+  width: 100vw;
+  margin: 0 auto;
+  z-index: 100;
+  padding-bottom: 1.5em;
+  top: 0; }
+  @media (min-width: 464px) {
+    header {
+      position: fixed; } }
+
+.logo {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-bottom: -1.5em; }
+
+header h1 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-family: "Fredoka One", cursive;
+  line-height: 1;
+  font-size: 16px;
+  font-weight: 400;
+  font-size: 2em;
+  font-weight: 100;
+  margin: 0;
+  width: 100%;
+  padding: 0.5em 0 0;
+  text-align: center; }
+  @media (min-width: 800px) {
+    header h1 {
+      width: 50%;
+      padding: 0.5em; } }
+
+h2 {
+  color: #49fee3;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #49fee3;
+  text-align: center;
+  margin: 0; }
+
+#displayMovies,
+#displayMoviesByGenre {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  z-index: 10;
+  background: #9C2542;
+  width: 95vw;
+  margin: 0 auto;
+  margin-bottom: 1em; }
+  @media (min-width: 800px) {
+    #displayMovies,
+    #displayMoviesByGenre {
+      width: 70vw; } }
+
+#displayNewMovie {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  margin: 0 auto;
+  margin-bottom: 3em;
+  z-index: 1; }
+  @media (min-width: 464px) {
+    #displayNewMovie {
+      margin-top: -16em; } }
+
+.selectElems {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0;
+  padding: 1em; }
+
+button,
+.nav_link,
+.submit {
+  padding: 0.5em 1em 0.5em;
+  font-size: 0.7em;
+  margin: 0 0.5em 0.5em;
+  background: #9C2542;
+  border: 2px solid black;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */ }
+  button:hover,
+  .nav_link:hover,
+  .submit:hover {
+    color: #49fee3;
+    border: 2px solid #49fee3; }
+  @media (min-width: 650px) {
+    button,
+    .nav_link,
+    .submit {
+      font-size: 1em; } }
+
+.submit {
+  margin: 0.7em 0 0.5em; }
+
+.five {
+  margin-right: 0.5em; }
+
+.header_nav {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 1em; }
+
+.displayMovieDiv {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.addMovieSection,
+#editMovieForm {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 2em;
+  width: 95vw;
+  padding: 1em;
+  border: 10px solid #49fee3; }
+  @media (min-width: 464px) {
+    .addMovieSection,
+    #editMovieForm {
+      margin-top: 17em; } }
+  @media (min-width: 650px) {
+    .addMovieSection,
+    #editMovieForm {
+      margin-top: 21em; } }
+  @media (min-width: 800px) {
+    .addMovieSection,
+    #editMovieForm {
+      margin-top: 20em;
+      width: 80vw; } }
+
+.editMovieDiv {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+
+#addMovieSec {
+  z-index: 99; }
+
+.addGenresDiv {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-size: 0.9em;
+  margin: -1.5em 0 0; }
+
+#addForm {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 1em; }
+  @media (min-width: 650px) {
+    #addForm {
+      padding: 3em; } }
+  @media (min-width: 1200px) {
+    #addForm {
+      width: 700px; } }
+
+.addGenresDiv label {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center; }
+
+#addGenre,
+#rmvGenre {
+  margin: 0 0 2em; }
+
+#selMovElem {
+  margin: 1em 0 0; }
+
+#movToEdit {
+  margin: 0.5em;
+  color: #49fee3; }
+
+.genres {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  margin: 0 1em 0 0.5em; }
+
+#ratings {
+  width: 5em; }
+
+select,
+input {
+  border: 1.5px solid #49fee3; }
+
+#addMovieBtn {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-align-self: center;
+  -moz-align-self: center;
+  -ms-align-self: center;
+  align-self: center;
+  width: 10em;
+  margin: 1.5em 0 0.5em; }
+
+#addForm label {
+  margin: 1em 0 0.5em;
+  font-size: 1.2em;
+  color: black; }
+
+.movieDiv,
+.NewMovieDiv {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  background: white;
+  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.2);
+  border: 10px solid #49fee3;
+  margin-bottom: 1.5em;
+  padding: 1em; }
+  @media (min-width: 464px) {
+    .movieDiv:first-child,
+    .NewMovieDiv:first-child {
+      margin-top: 20em; }
+    .movieDiv:last-child,
+    .NewMovieDiv:last-child {
+      margin-bottom: -18em; } }
+  @media (min-width: 650px) {
+    .movieDiv,
+    .NewMovieDiv {
+      padding: 3em; } }
+
+.movieDiv p,
+.NewMovieDiv p {
+  margin: 0 0 0.5em; }
+
+.NewMovieDiv {
+  display: none; }
+  @media (min-width: 464px) {
+    .NewMovieDiv {
+      display: inherit; } }
+
+.movieElems {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 2 0 0;
+  flex: 2 0 0;
+  margin: 0.5em; }
+
+.movieImg {
+  display: none; }
+  @media (min-width: 650px) {
+    .movieImg {
+      display: inherit;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex: 1 0 0;
+      flex: 1 0 0;
+      height: 15em;
+      align-content: flex-end; }
+      .movieImg :first-child {
+        margin-left: auto;
+        width: 11em; } }
+
+.hideLogo {
+  display: none; }
+
+/*# sourceMappingURL=main.css.map */
+’Uutf-8_>https://fonts.googleapis.com/css?family=Fredoka+One|MontserratO≈bplist00‘noX$versionX$objectsY$archiverT$top Ü†Ø!#)*0123OPQRSTUVWXYZ[\]^_`abcdhiU$null›	
+ !"R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1Ä	ÄÄÄ Ä ÄÄÄ”$%'(WNS.base[NS.relativeÄ ÄÄ_@https://fonts.googleapis.com/css?family=Fredoka+One%7CMontserrat“+,-.Z$classnameX$classesUNSURL¢-/XNSObject#Aæm@,(xß »”456BNWNS.keysZNS.objects´789:;<=>?@AÄ	Ä
+ÄÄÄÄÄÄÄÄÄ´CDEEGHIJKLMÄÄÄÄÄÄÄÄÄÄÄÄVServer\Content-Type_Access-Control-Allow-Origin_Timing-Allow-OriginTDate_X-Frame-Options_Content-Encoding_X-XSS-ProtectionWalt-svcWExpires]Cache-ControlSESF_text/css; charset=utf-8Q*_Mon, 06 Mar 2017 06:58:30 GMTZSAMEORIGINTgzip]1; mode=block_%quic=":443"; ma=2592000; v="36,35,34"_Mon, 06 Mar 2017 06:58:30 GMT_private, max-age=86400“+,ef_NSMutableDictionary£eg/\NSDictionaryXtext/css“+,jk_NSHTTPURLResponse£lm/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiver—pq_WebResourceResponseÄ    # - 2 7 [ a |  É Ü â å ê ì ö ù † £ ¶ © ´ ≠ Ø ± ≥ ¥ ∂ ∏ ∫ º æ ¿ ¬ … — › ﬂ · „&+6?EHQZ\^emxÑÜàäåéêíîñòö¶®™¨Æ∞≤¥∂∏∫ºæ≈“0CKSaeÅ°¨±øÁ %;?LUZnrÜî¶©ø             r              ¡O@font-face {
+  font-family: 'Fredoka One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Fredoka One'), local('FredokaOne-Regular'), url(https://fonts.gstatic.com/s/fredokaone/v4/SL0aFUFfkFMMdariYQ3_YYgp9Q8gbYrhqGlRav_IXfk.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v10/zhcz-_WihjSQC0oHJ9TCYAzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2');
+}
+‘Zfont/woff2_[https://fonts.gstatic.com/s/fredokaone/v4/SL0aFUFfkFMMdariYQ3_YYgp9Q8gbYrhqGlRav_IXfk.woff2O1bplist00‘vwX$versionX$objectsY$archiverT$top Ü†Ø%#)*0123STUVWXYZ[\]^_`abcdefghijklpqU$null›	
+ !"R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1Ä	ÄÄÄ Ä$ÄÄ#Ä”$%'(WNS.base[NS.relativeÄ ÄÄ_[https://fonts.gstatic.com/s/fredokaone/v4/SL0aFUFfkFMMdariYQ3_YYgp9Q8gbYrhqGlRav_IXfk.woff2“+,-.Z$classnameX$classesUNSURL¢-/XNSObject#Aæm@,(åÇ »”456DRWNS.keysZNS.objects≠789:;<=>?@ABCÄ	Ä
+ÄÄÄÄÄÄÄÄÄÄÄ≠EFGHIJKFMNOPQÄÄÄÄÄÄÄÄÄÄÄÄ Ä!Ä"\Content-Type_Access-Control-Allow-OriginWalt-svcSAge_X-XSS-ProtectionVServerWExpires_Timing-Allow-Origin]Cache-ControlTDate^Content-Length_X-Content-Type-Options]Last-ModifiedZfont/woff2Q*_%quic=":443"; ma=2592000; v="36,35,34"W4718934]1; mode=blockTsffe_Wed, 10 Jan 2018 16:09:44 GMT_public, max-age=31536000_Tue, 10 Jan 2017 16:09:44 GMTU15224Wnosniff_Wed, 27 Aug 2014 14:58:09 GMT“+,mn_NSMutableDictionary£mo/\NSDictionaryZfont/woff2“+,rs_NSHTTPURLResponse£tu/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiver—xy_WebResourceResponseÄ    # - 2 7 _ e Ä É á ä ç ê î ó û ° § ß ™ ≠ Ø ± ≥ µ ∑ ∏ ∫ º æ ¿ ¬ ƒ ∆ Õ ’ · „ Â ÁEJU^dgpy{}Ñåó•ß©´≠Ø±≥µ∑πªΩøÕœ—”’◊Ÿ€›ﬂ·„ÂÁÈˆ 3:BXfkzì°¨Æ÷ﬁÏÒ,LRZzïô¶±∂ Œ‚             z              O;xwOF2     ;x     ó¥  ;  A                    <≥Å` Å4
+Å‰PÅ™D6$ÜlÉ8  ÇPÉw˛w‹g∑(†RokTPÏ°åär ˆ>˚ˇñ‹C|∞¥b∂ô°î4Ñº+v(k‡p.’≠Bá˘ÿ±ô∆Ã◊ÃâÕ˚û(IlÎ±ùÂ‹Ü2ÕÙ∫?—?∂_PPnÅ„ºTGNû/∆“∑ÔB,Ë «GÑ OËl´*ÅÑÃƒ»ﬁÃ≠ëKÿFlcQ,í,Éﬁ»ïÇÇ a`%¢††¢M˘èÒ%>à˘
+F}~ç=ΩgÌq‚∑à∞)Ëø;C’nÁÊ&°<Y±>˛‡ﬂ˙ﬂè_ÈÑJ(ÑB"âá¬9/„r#&ãÿwYƒbãÿ 6àÚmë˘ﬁô6”cMÀ≤d{^†nÅIêçÔ∫‡{œm˝Ói&˘õIˇ$Y≤v7≥ºqp¡¢eAËÄòwP[`Å& ©ﬂ˛•ﬁ9i˚P±vŒ
+˝õBÃQS‡N@ˆ+¨Á“˚6u˜äQ ∞VB£3¡ µ‘_Ò ™eJ’•:Ûp°†@	õ¡’j}U[£≠s@'e∏ŒÁÔWˇ!îãüC0"g¿L†7!Ç–Ûoõ’Œ¨íU´Ó<’Ω+J∑ÓﬁUE˛!ÜÅê∞I6jŸΩÉµÅë«B» ¿ô(vBÿ"'nïâçıµIQóˇ Ö‹<†8¿é¨πÃ>P3†Àh9ö¿ú8ÇÕDènµIf°0(ß¢ÓŒbCÕ"òLö°cÕç¸˛‚µÊª∂WöààHÉ	‚˝Ró]∆fT˚B)Éö0 ˇnŸÒë6µFÿd}˙Ã
+0‡f†ÃAXÃ7a©ƒµL‘π‚7ò§gÆn
+‰ …;◊X0Ez.üΩı1K´á14õ_\Eû]˛\óÑäÈ˛*¨0U√È∆AŸ∞p∏iÿ[õbLaµé]T˚'Æg˝∞><£Mg˝î©Y3ìG≥ÜÓöÕû]ò≥≤cˆ±º´? ≈¥vÓˆ‹≥ö®;-öﬂø¿ALA≥ÎI}ÿÇ6∆Ò∂4+úÚUJ÷O”ô©°Ó £ÀR◊~ÖQë›⁄tçèÆ_è1ÅföS)<5Å¸ï†®ÿ`∏¯¨	…Ÿ—
+Ê$L2äz€àµÿAiß^:}é	1bLú”~ëb‹yŸ&#Õ5ùÊπ{Ô|¶X0∏£K0§˙ra¨òqAÅS œÅ⁄ÄWƒÉ§T$æÜ§©
+|ıtÅÕœ `Abêx)Qß°rn!épπ"‰èP2y·4Ì‰≥%™ú
+πÇ∫±9äÑ…«coMƒB1%]3‘:èª∑tJJi)JV_È€0îëÑ-´sΩ8ßÛÔOc‚´¬ûhndœ¶ºÒﬂõ^Xpw·-¯Âƒ…~Rza†˘Ì2Âi=„®∞Öé˙Ö;◊.ÜºÍú|ı~+íó”˜USCn€z]™„©!}Õ˙ñ7ó∑ç≠ªÑı7ÿ¶1òC+ÖO	Spß‹ˇÊByà~}ˇ«•G‘?¸KLJf9v»<Ì8P¬œ-∆p_#‚hÈñ}èïø˛W7mﬁÇe+∂lêP–à»(®x¯ƒ$§ÍöIﬂã´"j™ï¥á uä§üå)Xd(Ôïóí‡¥™¥€48@Ä)ê◊(’O´Ü5∂Ñ”xj“ö†^Dk‚NíN*%Î‰ı˚œÉM£—JË–c¿®Lò±`≈Ü˝ŸçpWÓ˛Ò™˘ B\Ñu^‚$TíK◊gHÆAæR
+ıU˚Ó≠	âÉœ2í§]5ΩD‘~AyQ™£ô:b¶[6ÿZ1AÅ–êË%ÿªÅˆ3:Å∏]ÒÆp]úªWíÌ'/GGãN9„X)∏[Ó∏ÁÅGû’ãÙ ÔN3útË1`ƒÑVlÿo‰hê”gÆ ‰‡~$DDEQå8	ï‘/Ωd∆gYÔöı–7©‹Ãp∞¡V 7B`‰}Pè√<öˆV$í C¥"	®êÌ;ç ©˝Uo—∫oÓa<Î#zF/‡ºÅwà∫4íV“%zb¥‚˜ïÃíE≤J6….˘$øêÇR(éë0@≤îÎôÈ3ÈË›òFÓv$ Ä$B!kˆJÑÚºËó•xí$IíîÏw4hﬂèéËâÅââòâÖXâçÿ>Á˜ê 	ëâ&1‚í3pC ¶úLªL”jëv3Ã»ÿS+3k∆æ¬∆⁄≤#ö¢iö¶itï7b-ÿ¿ÅkáçÜ`Æ∞çYkHÀ…Ñ\≠s¬)gúèõL°vÀ˜<»≥“(¥Ë–É6Fú	ÃX∞Z{*;Ø¬˛ää¶aD˚¢4[SX§itiõs`I ¿rP®! “ä‰Å“ÏñcÛ*úÜx?zyÃ:Üb{”   ÄaÜaÜaÿ<„Ÿj:ç€y¡‘  ¬á›ÄÕ"!1“(y°ßÄ:BGÏHyº*•£%zbÏÅ”«æy¿J¬˙¯∂ëÜ”r:Nœ8#gråô≥pVŒ∆ıÚ9»â\»çºÇèÛs.»GN>Ùì	wßP¿ ¨i•¢ì®ùL*å0Œßó»ZhÛ(∞êêTK€∂/W€6Ôò`"S\/ÊöëêßπvyQÓ≥â&≥€Õ´Ì±2ó«¥Í“Óî≠'ë—ñÑFGD$πâãÆﬂÌRf3∫‹ )5KñK;2∆ﬁ¨‘)0∑ÅaJIâ ≠8âóÑ9(Âañ»Ü€ ÑBO1B!Ñp˚Híõ‹a=UÜŸèÓÄ≤Ω¶ïio¶±|„7C˛È^˛ ÛÏ5*´Aí4;=‚ÿúp Á◊∂ù“âSáFJ»õíÚ	ˆ'Çyâ°OM˛{óX‰≥
+∂ﬂdÅπ˝ÏhøGU›+÷†ÏˇC©øó‘Ω˝’GMµw´òu´™l˛˛o@ø27-Gñ+V##/ª™¡SŒyüï…ËπQqª…•+cÊSÃŒ\-V≈7«]Oºa>[ŸmgVÿ∏çô{ÑoôUïE7n≠†h§äVO∑êj,:ë
+Ñ¬~ÛöeWj8QÎÅ™îTtŸ*ºK-ÂMàÿªSÇ•©—9}…åH Ö¯'Ù˝øÑnë@Cê≤ÊÅŒî6Ÿ…q
+Ry∫y’÷¸2ˇÓŸ≥˙y	üÌW.ï@	·⁄/\∂ˇ(Ñ©)TÒLπ1ä¸~çÖ{Öä±„›iÛÊ†Ì  ÿÕT~¢7:IS)Â5o‡Ù+o<Í⁄v	AzÚÎÒe∫—ÇvèL√ÒGÆà:’N(:&≈/ÛSÃÇ;ZÛÏ6|»Ÿ“
+ß!‡$ΩH(1‚`%IÊ¯√Yúa¬GäÙÑÒädBÃ{ÏÉ.!ö` ∞`CS"ÕàÉeãyY-…c≈kl vt;·p"Ñã‘Aå±‚≈âî$J≤hÖ⁄‘!6€™E≠„ΩÕfv“ÕtÎa°∑[Í3¿⁄AmÍ6;∆÷H«5Ótá;„GH?âÚ≥~e\®Û±LŸ!¬”†~êt[co≠qf∞®@,éÑ ÄaÉ-v¿Å`æ&&$ˆÿ¿<f@±ƒB§z¨Æ÷∂kÜÖ∂ew€‚ ÃØ&ébè
+8`ZÁfÏ@ârÁ+ÿ/eÓØ\<2∞Âü ‚¿ÿë—
+c Ü#∫PÅBÃ2Î7Hüwô–ª√$ü∞_%Ù)˜ÉÂ^ÍA#ÂB[[lOÕïé÷yõmÄWÀmjù»' ¸ƒ˜ÄΩ´¿awΩ}˚ÃY*§?PËı∞˚º‹¬Mô7yÿ"‚F4`4≤Ê
+ò~¿é„èSÁÑ!À5©»L‰A"<"aHé$âLíë¥§d‘Úrô∞ÅëIÑBìp$Á1^ü`˘œ\6£YÒ◊/_ø.<;˘l¯Ÿ–≥„œv<k|F{2Œ¨5ø$ê-«Ω @ΩÍ)∞Û ªzokLŒÏd
+B[3y…°©ˆ∂·ÕàôY¨…]ñ€P.BMÁm	a·°ó€ÜÂÿ®ŸeK/ÏM$7sï¯÷ ¡Õ!˚Ê8áºi¬eGï`πïS‡àdJF‚¿Ê036ÈÌ≈Ud7◊≈4ÎÂºÌq&‰{<πvfâQF¿˜v±,¶úG]go&œæú0Ù›ÅåZ·¢g"FÑ&VYKíºûâ,·2‹‰‘åêbX«¿g¬«ßÅâª€∞—ô‚y¢‘ûoÎ¶úﬁv⁄ÉÛ£AdÎ áÔá)lËˆFŒJñ˘@*[6ªpv:Ùlë<KXÄ©""#√Û¯Â£«{≤Ùà$ó…rÎ!z Ñÿ«∞¿ΩW≈˚[ã∑DÀkÂ≤¿"pxX)A;Zj8ÛÊ›oÜœ}È{>—eròÂƒ‹∂kàπ„`@§Du:˙mt Ø+g—ß(Ï8zë>˚Êø√}ß„_&ˇˇ=I1<ê”¨¿&o“&D@ß“iËƒ∂ßŸ>À¡¶˘có˙]€≤ºó∑‰”æãX÷¬cÖ“¡Lì◊T}ŒÛf°˝Äÿ®ûüçdªìGπœßÏyƒ+√“ÎÎbì IqÏ>∞ô°9!m ¢%rè√ÓöDÇ8ÈgG®êà∂éEêù…±à]é%C»—<{ƒ;·˝:`Ê¢◊H%?é%Z¿≈5º6õÚ/2Sïà?†äÀ!T¢’W‡gÎí'W÷nGöµxW“ëÄ3Ø‡´k-éÉ¨kY) u$4XVbìœpÙïu	‘ @
+eÅÌÍ…L•≤ã=/œZ◊˛ÄﬂÃ"‰àÉ‰…¿íÎﬁıŒNZ∏êiøÒÆêt©`Ù‹[ÊÔ’wœÕSΩicÁûÖcHúiyb¿#y§ÑÑq<&‘= .Ï•S:s47A∂ã∫.Öƒ&$ln5,fπibßRï∂\3∞„]ìnÂd´-µ@óA¥ôljÍó»⁄d≈F…n:™ÃÛÆ¥[Ÿ•æΩŒº4B∑©eE°>0ÊÑ“ß°Û3‘'w®q6€K°†Àƒ‡©¿<•*≠á√‡™xç°¸LÓ≠Ó£Ì‡˜ñÄﬁ5…8*•C& tÍΩ⁄∫)ã¥@Ê!¬‰ú≥øHM:√Û;9ˆûÑ∏!’j®¥P\V
+&t±Ä~1f€Î k‡†Ø{HF,k*†ƒ*m]
+ÅLòÑ&πß¬n+≤skwAnÁS∂S{uú4ã¶Ã.¶nw}_Î∆JÈK[!+…VÎÿuÔu6ÕΩsçúvi–™} ‚¨ÆØœ(Å/€Nû◊ãﬁπ&-„kùëÎ¨„ò ®∂‰ìIÉæ÷ZqÜ£ØR@6IÈÛ0æΩ´.ÁÏüê1√2Éá¥Ê©µó#V%w¸<SH◊1ØuˇÑ…Üä¿˝›÷ƒ/¶Q¿L+YDﬂÌLFZÈ˘ÕY|ÎÈ^#∫Éàv_|4◊€t}{êzb"Y9∂`©ÈfÅv÷⁄ˆ°÷∏Í∫Î7ÚZb=∏ªY{K}j˘øá›;nÎÔ¢Ä]m;lhπHcXg˘Z[ã¯∑˚€\Ï°\CAí(`ﬁ/&Y´í@Àí/Où°•tTπX2Â„∑◊$m≥yoí–õp]ŒIúiÿ’C%Jˆ‹ΩóD“BéV	A¢∂©rqbÒÆn˜M‚¬ÃÃ,(H áyb|Gá¶x‹≠T—ÌMéO˙ì§gÈÿêÃº-¶„¢å´~üç]Ωz÷3Rqc…j: ˙uãwY6;Æ^È:Lì¯§Ûm–ëà¿›∫jŸ …}|éWN§;a\öÿ–?§ﬁ ¨πµÄ_rÚºVÛ·/Å>b¸Kì:ÿÜ&û–ÙxµWh:ÔKb+–Iüì‰vÈ› ∞åº|µ≈<‹ÔJ”&q3D±›˙tˆ3~˚"º‡ñµZÑí/\Ñ-T€π˜ÖBÉÅÍ∞OeòæÔúpNy‡+”ÓzœY˘k$iv8*É3ªsR˜ﬂÅG¢Iâ˝yˆ÷ÄçMË’ŸéŸ±÷ﬁnTˇ7¿Â˛¿Äu‹π∞Ã˛i•ùÑím◊(zπ∏P„[˘s÷âsQRz=E‹øücØëãl¸ú˜DÙmN˙Ω'{á.Sô#.¬≥õtËøQÊvõK˝˚˝O¨äÆ≥ÊêÇ≥úﬁ=p¯%sÜZçæíÜx¢∆4á,)Ω≈l—az Ø˙Æf÷iSÿ|F3˘Çˆ˚‚Ñög≈’É±Ì∑§X#4NπÑ≠}§:ı…=™‚∂ªd”ùÔŒ‹ø	+mÛ∏m˛P∂GVáΩä†È4Æ†ùU1¡·∫µ+PéqvÛﬂó„ie4˚vBMv§Ô„¶ôû!ÚÚ8.∏¥Ù!ãX`°áâãÆÌb
+Â7~Æ⁄ﬁABÍëuõı«^E“4ök¶!˙dg’X˚î¨’hßí+ë∂=]âa/î≈câØPŒÛà™Ë~Í[-’â¢ªƒV»A∫òÃ:ñæ˚sêzFtpËÏŒˆ„`é- ›W>yö£R•fÔ∞º%>fïËÈ$ÖL⁄PÁZÔÉƒæ¿£ÍÔã\x5∫•«ç∫⁄Ó6Ä»*àF≠U∫í	ﬁ≈M.JáXà∞lCIFÑíÖªµv üJY»Æçítˆ∏}NûÖHá‡uiAŸ`íK ‡c0ıÌˆÈ0Pb⁄ˆïÿüCˆd#:òôÏ˜`åDª∆ÊèˇCﬁKòÓÄkd$5∂ ùTr—ˆ◊µ?B…ÔïIäy˘†K¨1ﬂ:ƒ∞9ÿb:|‹ä?∞ÆïeKUf≥ˇhvìcπ·w∆z nËÄ[s∏8ÓlÅÔàµÛÖL)‡Ödû.by∞5l6r6Foqù«ÃL;\PÁ	;;c˛}>\>EÎRA∂ê[\ÔyÅeÔ…ëlÊ!A(Gü.:™ë‰}∂ı·îΩ«≤ÅÊòé”Ñp±0∫ ˙–2tŸ.¶–‚tΩòﬁ>(.YÀ„Ü}1eìöpK√SÅü	>Æ˛M&¶C4 ÿSTåÄH◊gs√õ∆n’h3M+¶kû:õ—Õ^n+4IÜâg¬l(‚E‘=Ërö‡F{¸fNï.kyr*Hâ6ãÁql&?5êïπDéFKdª]“ú‚^îU%8R ‡Õc®ºø
+Ä›¢MàL∫?≈!]Ñ¬–≈¿àE∂v≠∂±ÕÂ¨ñ2IX*M!Å(ÄùÊD0h≈°:eåó3\P0oŒJY÷ 3«È…*Â5∞@Xs•“’B:öm≈
+;_ÏYY√©ÈcL/äÿv–`5§ªä¿[7÷[‘‚ä¶;˚nÀ‚Ó2xˆAÎÒKäwl˛ïCkÙÄåp.ñ≥°–$^$vù‰®	:Á`·Wıû%Ï“#öÊÇvá%¬@ü®Ì–>QçÊnPf–-K˜P≤∂6;œ:∆Ÿ)ºˇV«’$ ˇ;œ<Ä˚%ûdÏ?D° ŒöÇÊJ§⁄$ø°
+m©DõqY+dO©SC±41Â2'?nPÜ)P”oÄDÎ|˙doxÑKPS(Aîö?_∆À◊éwëJ©AtN›úôÜ0Ó´Â5∏0y!Õ¯ü}7 ¿Z‰i◊Ï≥Ô≠lı∑=ª∏≈˚lsâ.‚9§”CEÄ÷~˙ö¨π[£…Ìæ<ÿ,p\SFÍöé¨€®ö‚z1§€·’†îHüÍ∞%Ä^Y◊ñ»ZÄ±√*©*M∂Áù>Mbóe·M_ücVfh…–M%Û∞Ôl/mX©√gÜ˚éÇ)p?Æªì¨F™¥é,;n%ñr1Ìï2§yàZïp∫í¡ãìÔ–≤8Åæ†ÎAœú{¢Dyó	µh¨ÓÆ'ÊXeg3*tH>ﬁ°31ç9j‰Î( h¶∆k&É«“8^ü&b™KÕ#]ga^kèÔÁX
+s˜Ñ¿¥A-…~‚Ü7Üzëô“¢£À˝úf˜}àØ5OG0´JâË∞êÆ≥1Ë†Di—>5ƒs7⁄Ñ…TŒÌ¢àéZiK™b‘™MYa=ÖæU*ê	é3∫	<…‹ZˇûœÛhwgTïHõ∫œ„ÿ¡Ê!H6Ô#A1πBìÙ]#u∞Ø⁄É—r«frh°+∏YÉÜÕ-Ìπ;/Ú`ìŸ¥˝y√XÖz6ÜtÊê·:©a‘•Ñ≠∞\%oÇÈÔB˝t‡ÉfÎMú?ÓljÊ˛z±^ﬂ◊∫EÃÜE‡≈„ßq0‹°(⁄;∑◊(U`2Á√”çH≤~∂'¬;•Íq∑?$ÌREnÌD;9AUÖg'<2∑®É`tåô@ì—jâ#_¶Ûƒ.)ƒl∂à$Vv´†ç‰ˇA)È⁄ ¸ìªK+…˘˘~3xPBØ^¬:äïmÕ2¥ãsyêpñ∑C⁄©ƒ˚\ãQµ[ÙïÊb∫PLì≥¸ÆŒ¥üñ\»]®FRaWpÌU∫ca:fiÕ: °áV˜]ÄV›U≈ŸÍ=Ù~ºÚ-‰¶%{Ø»çe€EÙ5PÈæ≥IDÇÌA v‡ƒ¢ÇVuD1Øë=,&‰IdÊæÏ±"KÀ∂ÎˆD_#9ØYX&√ ¶xÇó`%è—Hü HÄ/+‚Y-ªi{ÀˆcèØ¸ëãÔã‹îl
+ú!¥"9M®dSã˘"õÂk÷FZPÜ
+dÍ'≤TÉft}4≥∞@@Å&Ó^Ú¸u7NÃy¯ñ*i˚
+5“<ÊÁ}≤Gt@¯◊‰O∞ @"ª©RAÍ‹pBπúº’uiƒ#|L‚Íhix˚]˙\Ω*}∑˛x•	◊Ló=Ê8Å"íπ±Ø)n∏ê…h|≈ñ·Î` f∑Aü£{+Z"yœ{=BI¯%Y◊0˙Ñ*˛pÒ@Nm—∫£„˙Qù å˝Ë,ªõ◊Ëéd∂â¯,‘#õ_´ß
+ˇ°Ú"˛Â2íﬂ?0Í9(ád
+fE7…Uøî,√Ô£©d…3mU%ªΩã,l Ï…NÙ¯J¡R”°≠O0™∆ÈPAz¨/ïÇòb°∑]òs`uﬂi»("µ$√îB7Ú‚Œ†L~rÂïÏúª+*∑d…∫-Rö"¢s}≤∏áï!™F@Xä@x2õ¥◊ÏÛ{i3∞EõıË'ÿƒîì,ôˆ6µôlQ›ô‹/<’∏
+3dTµcÛ¢ƒµÎvÂÉ{†áà~\ƒ©ÇÃ¬+u∑4ïù—¶~ΩÀÛV«3íü›%Ÿ”r®[+ﬂÈ’Ö∫í¸4ÅaÙ5Œu±˜aÓFÑôˆ7Ë¯˜≥‘Aœ‰è‹ˇ[‰ú◊ÚQóÚÅ%µJ»ëÆø⁄∫≠ñ◊^ΩÙà´ë˙‡ø¨¡àÂ<$)»Fæ∞j®x÷¬[ÙS¢ΩvÍê–]S˚
+Ÿ–>§0Iˆ˜.X£çä9¡rù•¿VƒwÔœâ=~Ωe€÷òÄE˘x∏[íãÿßÿo∂È ±‡Ôn^#´®^ˇˇ)6ã˘óí*›Ì9à∂d"ÇX÷›€„≥(a NA˝e√´L°¥ÿ/≈ñt§∞HËRyƒ/~*bhÓ]ª….ˆr≥?R@‹hEô`∂kªsMOhËÜÈŸ^¢°¿.™.Ÿ∏nháC˝<îªc∫”êtò7-⁄y(gãê„T¶Å;CIØIeì∏Œ∞àÀÆÍÁ:kúr¿UI2Ü’._'ìn´%ß[ÃL`„∂d≥43ì8‰Õ+A Ÿó˜ßwπ¶ÿ,GØˇRïÌ…®YØä_§ÿÀÌ©T	œ©ﬂ˝¢| S"∑1ˆXÄÆÒ„ïly¥‚oC]Ãº©›†¬Yå6˘óí[È BMﬁ“´ﬂªàˆ•Íöw+iê2Î†„Ïˆ
+1∑)“Aç,“∏•1	›óëm fGﬁx/Ëí=Tè*›±˛„d:≤®UŒˇü¸MEπ∫ïΩ5$ç¨ÿ¢f›b"D‹ øAráJ=JOÙ]ú™±ı$ßÏts:‰Ö˜ªªi≥hÅÁÁåZ˜0“JÇ„l;„è˘ë©”∂ÒY˚¢3F£”ˆ&eF…µ‘k _ÆÛ†ÒY˝1#1i{í2£}|©?+Ø˚?i∂ü¿Ñõ¨Ä:Ä˚Ä+ Al'Eúô))KaƒdV¶NÂ§FÍ6Ô
+…Bµ“NÙ»Æ;h∞W–∂azÂP ’Ê’<ä#T^„≈bˇB¢V¬øÄ‡üõN–!¡€y€ö;kSàA™]#√ÚnbhQö?a"ÑÀ«Õ:ô1òql\Ál‡dBË'‹X∆≥â∏N63éaÊ4&ãGÚ/J#Ü ªáGTªàAÖ)ZÒˆﬁvTSÌÍ€kªÊ≤µK®˘–¢˘µÅkrFÜÿˆ∫€˜R≥Ï’Tªn¿óê·,ª∞ùŒá¥¢Äò¥p ?˚º⁄N·\cûÛÖ;z9Æßb]ü∂{ÓüaÜ(ú≤Ãˆd_¿=QóÌiÔjï\´4p›pÁ˘.«ˇ… åﬁq∂-yÓS{éN‡s1Z√=˜ü¬Å@
+√—[^Ve}˛’auØ™¿∞yiKYÌíÌ¸ù∫üˆw9ëO¥Ω÷ç‰∫oÀñ Ùˆ.ÒYc°yW≤≈[r%≤PöstQ&ØiÓ«úKfì”‡˛≈]rºsòä ≈“Î®ãuL\÷’fô¬œ]y†|¨∞»ßîóÁôõ©R™{PBû*O§ÁZﬁÑ	UKtw3ZÌºRwYO…Ì¯w«°/a/P›µ’Êõ∂á“Õ;”ŒY∫Ùm´Z≠˜{PPœ¬˜€ÀåÃIõâæ4¨‘—›¬∑|ˆÑJ£Ñ0ÏW˘ÔNLw√ﬂr¶#2<}~èríÄ-∑ÛïI_XÉZ √ª¯(’pﬂ˛3πs"¬b6doÚCqyàœˇêXËy≤§‡"Ê5>ç≥áaß˙}∏‘ùÕ7Z:íÉxVïwøõû%ò¯Éæs>»C:Zå#É·Ù≥98<Õj›ú≥~√°Üs˜ñìó<&kªu—4"ƒ)ÚLk®äñ—∏˛ÛÓP_,#¥ÅÓ[0&Í∆R‚äÄÚ†ÿÊX…;ïˇ{*VÌ∂E^ OpSŸ˛≈è)∆&ÇiÄÛºtˇñÎ˚7Ø`3√Ñö,1IC5v‘_jYóE∏ˆ˙ı¶cú	KîÔø,äZîwŒ„FÏOÄ˚ú’≤9gCPíÃ.'˝„àBóÿ…Ô{d$‘@3˛î4¨Å¶]3?‰xòÎE«lOô~]∂‚H˛\¯"—ö¬˙Ô©Gï≈^°K:∑ y˝ù«°àÙtªIQ∆ÃÚò©,y˚ ‹iúGÃoy√>-=ÕÆ∑«0O√1ˇÅOæ∫J˙“˛1ú≥´tXÔﬁZA˝ˆçTá<”˘<ì⁄Õ‹±ß<”xÏ+iÒ·ºÄê–ˇüªÄ€’qSÑ∆˙O'‹mp"Ã‹“g™ˆ¢{ªm≠¶ø8EÜˇ≤í2NÂo‹ú‡Fà:õ¸È˙S∆ö%Cõõ2 cîÈﬁì	X,à.XÈzá˘´3¬S5±z?"teÇQø°zM•Ô%ﬂ'¢Îr.nÅ4õ˚ß≤_úw=QÌoˇR≥cGWlòuπzÔtu˘ô3	W˜
+Ûˇëlbòa/xV0Õ¡¸[.IÌE0÷Ëÿ˜ı’±o=—CEBlyáÆ‚››)Í-ÅpãÃ/í—∞)’\7f†∏·hËæ¯%È©Jï®ÈôƒøÏ‡Ï∆\…A]◊(¡ø-g¥—#Ç}\
+Õ"¶¶·≤e·QíÜ^qù!¬;]ö¡OsnÆuÏÍîÜdQ¶m:ıÀª}ñæŒ]’K¿⁄«g@€√õ¬ô˚ªNÀæw„xñ≥[y˛˛“¬ê¥ÍtpoDÇ5Œ™t¡¶î∆¥π
+G%›vX*Œö¯≈ØÃ%`skº1¶{bƒâ≤.„åÛ{U∫§7îK?§o/pÏH¯Ÿv⁄#“Oë1Gv<|¶xzßª"7ÙÄ∞$ìÑétóÖ¨ ¨\‚1Z§'ˆ’I[∆p‡Õbb6≠QQ‹L uﬂ(W-ß©3˘.©(”ñ◊fF√ÅÖ„Ôó\zRwà±!ogÖÜs]Iï˙˘ª´’°h∑
+Å§ót∑+abΩVÏı”≈≈àœmÓéLgJ.æn{i™VÇ{◊'}“æ1ñk.Q: ùØc`›¸ia>_}sÍ¶∂ﬁlÆ∂™⁄s’~øp>µœïÚÁµ\∏∫®t*åâ˛ÉuÙôßøU=∞ZHÙbŸ SU?„aÔ37]b‡^Ò@‰uÀ£ì}ÿŸ"˙mÇ.1ÇÍˇÓºW~„â‡Œ√ÓHÔ÷åÙu•∑ äõWú*+⁄O_1HAØÁ6G(„kW$ÿá7°l3ÈâÎ%÷é÷Å_'û»eBÔX":_ÛÙJíˇ ~»œÉ}DR`\_Œ∏5"Ë˜ø2÷«∑˚Ó˚ΩN0~/iù8OΩ"( *ºk≠ã˚:  Ó›Ïâº©pH¡ÚÇmc	¡,QÇ*n˝˙>F˝Kfíjˇß+<3D=‰·lè¶à‚÷ãçªí$~§C´>ƒ>ÊêûÙIˆé·\œΩ«“^&*Ç_“±Ô∆O‹∆ q+—Ô"7Px·eµä]5 Cﬁ&.é˛5QïX|ä…ëœºe˙¯ã‡“≠ƒk4ˇ‡Œ
+?upÓ„ØîÄÇ≠⁄˛RæE∑K±≈„ XYÇ£xE‹◊`ô∂ﬂùc;tÙ{˜ó¨å+ˆ˜æª%[’T\<ŒÓG05ì¸ñ÷¢–¬Ä˚˙w‚ë‘≤Ñ"}≈é&x^ˆÎ#{IàüîÒÛ˝Í‡!”âËÍ®íP›2[®ü;]áê–È≥ösÿ`V|£„~~≈KGìbeÙ√V‹›ÔØÎç{íP«‰ãûm∑~{KÈ«üqw<'=1á3æª&WŒqÌÿù9ÓáWLÜ·O{K≈é¯›≤…N¶åa‚Ì≤ ßsÁÇsMˇúTÕ'æÀ…;•ÏπC¨Tπ0cÄ›FSÔ©Üåi‚Ê≤õW´◊o\¿]	‰’)~Æ{0cñã63≈¨nÔ¯∂ˇxáÖÕ£1›∏tqqºπ›N¸ß†&L‘¥√‹qü†6L8˜ÈygêÁ˜#÷o@‹ç&TõDØÄY’3¸Ïç	ÏeP;»H|E«¶`È≈˜ãÇX⁄¡é=∑:{„…ïQCü$A¶ÍyΩ9x‘6æsœ≠éﬁc “0ÂÉb:6K/z†RN’πcoñZ%I5ÔÛj0˝®Nôâ$bÈiõ#ì£5-‚¸u‚‹ñu
+›c˘—©´C¨wwE”æ}†ıC¢“W&˙ÅÏ∏Ω¥/8°£óÔû¯†u∑±Ùµn√˚Å·ùP,¶hØú’4WôıÅj©p
+7®LÙQa»¨€ﬂUΩ]ïéæù@'a›‘o —÷o,Bqi6ò˘øùZ†©md∞§∂%ªGxªJCãjrçÊÉıÑJ {zÀM√{ÄUÍC≠›”mªb…´µqnú0Ôó4ÏﬁÚæ∆Ãê≠Å∆c™ﬁ˘≈O˙gˆË$%çr&Ï-x¬&≥agÒñ^7©í/÷1p√¨«˛	≤@2[°·bö;∆©d=ï@`kcâN!∞ıZ∆›Ã#ÀÖG=±
+Ôót≠Ëæ“g±êÊP)s~N3ﬂBÿﬁU˚∂ßc#fˆTVJz)$êlﬁP‘pŸ
+∑Äwt(Ï2¶¶lÂ,–±±˛z–[¥ú‡O8Õ©º0¿:{= ü◊1∞7®'Y∑ª|dJy[∫uàeÓH¯ÌWûNì-åzÊKß
+™õá≈aS¯Cœ·X•â=lÈóOÏh.JƒÜIS¢O)Ñÿe6tKƒ*ÅˇÄÅ<¬z•á3n≤◊NÖ¨»Ë‡ˆΩßîœ¥‚‹œ^q ∏∫√=˜Ó^Ω∂⁄ßaç*™ŒO™F-4>∏ïÕXZ—É¸ V‰Å∂]”≠ªBßåÊ›Û⁄–m’_ÅÕõPP~?*Ä~Á¿çŒ¡äo—Tm`|À.µVàâP[ˆ–7–o“®¢SQp˜øùná⁄S†˙ÍlÖNË„‘gn©£‹‚øM7ITø0R@ñ„–ãÖªÁi!“Ω˜˝É\˘7?¨ç ÖÓÌ@µPõ=πF◊Ê“\øùÒ…*Ë6's˛˙ŸBwÂœsFá‹Ç‰“N2Á|DÁÊ/8hñVÛ´J{IO1~«5Œ˜™îÉsFÄÑd…	$®©∏Ã3˜h%¬ÓåEÖ|ˆ≤˝jd&
+
+Ft›ÿ˙É[fı∂{™"ö≥Ì¡˙œuü€ﬂ_ ìVüYHb–Ò"ÎÆsº˝È•Â¢Õ;ÈÖ«ò≥[*ÌÈ]%{,ôõæ0◊∂2Õ•≤}ëﬂ¶}ÜÎKÖ€7¯¨†AßyqâXÏØâãä”G,–â≈≈%«BÄø+ö)Ú˜w}§≈QjRÅeVPyG©∏‘Èâ0Çîä¶◊˜èpÙÈ3EU„|¿>Œ§TüÔ˜Oåÿ<ä8@Tê"nÚ˙√4†˝Ê%≈è">÷9Å$V‡cFn÷ãZV˝äÑ)Ö‡î}hR∫Œı…^—ﬁ16√8∆q	|≤—TÍˆ	p6∫l'ÚÂ±$G‘%gËız^Ì’øÖS X™ØÎµú>‹í–˙‰ùÁΩdœéb8aÉm.a/_dII¡p‘u@ÄßäøƒπÍí“C¡U°FiVz°0∂f>,∞MºvÇjny]
+*¡ñOòæñ˙…–àÎ7ù˛’»S8æöÚJ¬‘9û≤‘99ﬁ€Ç,¨%˘ÂOsí=<õé!Nï∆»?µË{˜≈$H.“†SΩ´.˛ Sí∂ß∏YM;#ˆ}ıò¨˝8‚ÄÏ‰ãﬁO2g„ﬁõ≤Ï6¯k¸∆±y÷¢XﬂQ*Iët˜{(∑ﬂ%∫Î∏VpZñÀD∞ê«^pˆKˆﬁød‘Xâ5lvÆ¯Ú´vÃZüœã°ŒølrF~∞Ñ˘ºÒ	:tÆÃŒÈÉ∑qˆÓ}Ωù⁄¶È’¬«dÁ°lgƒ¢π©O¿[& ƒg_†≤—_⁄
+†K≈åH/"f„Æø‡‹n¢∞ÎÄ)H„ˇ3M–5`⁄y#∆;hÕ%J∞CyÆ®ªß”.ÁÙE:¡Æw—à$FÀË≈„√›o™ø√¿Ô˜ø˘èB —BÊÕáÇ´)eLœçˇı·^ù„?J,√}Ç≈Ì7¢Â¬î\Ω86·2QV›å!n¨êVVésÏ„)*‰-¬œπá&579^S[Ëï‚¬5>§≠ dóó›l£XEa»Ç»÷Î6*æ”WÁ<çµ≥ÙGî˜UÄ˙™‡≥âOˇ:g›+–ø¸¡ π/6Í∞qmXl/ÎP†|L¯ë›6fÔ¨
+KM6•˘O·È CT=ŸπøÒ:És(ûÖ…˛≈ÂÜ¿	Å%yˆà=¿ˆ«äE˚ã]>a%û~ÎrWÏ»+U·<Vúãí:ÃΩ¿ΩÈ+yÕ|ÃY:q¸GŸèCÉ”‹iíJ¢îóÔ)C˙jüûû≥Ïlæ«Xî!˛ÅÓ}∑Òö”)Ò‰_Ç©ƒrß@∫x@#h6Aq‡Q]eŸ:|ò∏{2∫M#ı¸R>¬’>ì)ãZ]á,3i@πsˇòã°5ac‹*¡™bH<Ô<Ó.Ãn,»Í/6n.ŒÏ±„Ù©ÎykU†sò¸∫’ΩoÃÇbB ≥tˇT∞ûÏÍ6I
+cëC®«ÁóÿN¶¯ë§'BÖÉﬂ{:ÕØFoäpœÿ;∞!/Å◊¢î4ÔX¿#]4ë‹ V ÉFÇ?g_˚◊Î¢HÿΩﬁI_\y|Eyù®›‹*_≠ﬁZTêŒ‘ÿÛ€ªÇ D±^”Ù∂ÉÙ˚zÃ÷˚8˚˜N#%#`<.Ú2%xMF†d–c!Rôôq(ﬂX^)gv%9∑ÒÄ®Fp¨tß⁄PÖ´.¸ñ˛πZÀ**∏x¢ÔÎë˛sKˇèΩBâÖŸÖL™ºÁ˙¿çLúX´ﬂ‰î∑µˇºÃ›¿/"A¥ìÄj@ü«t5”_ñWÙ"‰5?ÓÅ.∑yé˚å‘~tƒµZ±/ÉÅÚ›\ãˇ%ã	kK‹TŒØégà≥.¶¢h◊ ¢ïπUµ¢¸€∫—Iê’^V∂≤iGﬁ÷√xÃ]:~|⁄sz%X‚<∆"©æ,H˘Ö‰≥Ÿª©yî%ﬁıt’42ºã7=èä{7±6bïîäÛ∂—Âc¥ùˆ›n~¨#Ω“L>”∑óQÇ˛é.¸ÅCÓb´c√»H¨ó@K›xëﬂß+ ˝)ï>Ç≈ˇ˜∞ª5•m◊µTæmπÎÓÎî®qi©àMŸü®QL}›æäõ‡/9◊Rãj÷ìåe)Xç∞˛∫–NQøwƒJ™x£≥ë§gÿ¬®TªgÃZÿe~áP∂!*4S6“ùcæˆ›B˝pª4Mx„¸`–Yçw≈t8 C¶'ΩEëºq≠7H+Ó8Ü7{ıÜøW˛LœÒ`Äüˇ∑‘àøu≠d`]¢;ÂÅ‹J∂M—‰Ä∂ æ^éçÎ?±K€?˚q–ÎôI.NÙ@'Ÿ2;ïïƒÄÄõmÈeg§§m‹l¢ÄãG¶¸‚âµ˚òê¯ 1lr““Ó«F	Ò˝œd8s∆—„áÉÀ)BˆÚÄìQçΩæ∂˚¨ÄØÑÖdÖ˙W—‚[{â¥  ÆìqäÂ>rä∆˚£4Kº≠œ!0 6™î*s*ZS(C¯0•ˆÙ‹V∆I≈S—Dsœ∫àÚ›™7 pt» qt](¬&D?tﬂ‹'Æ7Ñ˚§I≥¯©.MÕ÷]“êh"íÍL3º{®˙æÓÙôå7ÇGo„Xiõí©ıd8ŒD†`6øŸﬂà/^ ]àπ–ŒÆo<û—¢ºåxÌòıuˇ9ÕÊQÁü÷'Ì¯ƒf+b˝XÖ!TZ∑e∑¬r·&}ÂPdÂ…ˆ∏ÈÅU—
+ÀGl∂Á√ÍºóÙ7<Ø7L–{–áª-b∂·‹öÙ ¥è]}aØm<8ã?≈ÑF<†Í*›Ø\3•éFØ]mû‘Õ¢ˇ—\“™h£-{’ÕçZ[hî⁄.„õ		@∞$\NLLH\.	@BBb‚2W•,«'d eÅJ≈E)ƒûä±◊tÚPâ∫èˆ´+ß?xÿn>'¢±5%Cªn<ŸAß´VlËıXúπ¢ZﬁÒtê‚åL∑D≠˘⁄—ÎˆE´Jªn…ß;7j¿’1Éi'dYò\y/Kb≠ê8},Ò!_√jSá≤ñàÛ@ÿ·6%!?"Ø7È√ﬂ{àB>ã(¸Ó45Œ6^Z∞H≤ıu¥%{¿›Ôàu˙úk~NxABÿ,ÌE}Y~#ö_/K~∞Õ<€∑c¨›;ïÂïïÃG@jäŸÙäRTÛ_M3#fm›„ª•û9“µÃV+‚u>™Áõ=;ÀΩß˛Ù˚E√Ø	Û°¢L»ÛÇY ?k∑–«7¯Ûﬁ]∂Æ	ìÙOS–‚¬∂G°s“ÿâßˆ™À’COÃ,Wq‘~rç^Ú)è©ŒÚ—V RËCu•-:´h$ÔœˇpÈŒÊ≠N2˚üõÚOBÖ~≈ê&¯‚Mô*q~Kåo
+√miÂ∂i@·NF”H⁄Ω±-*†3”ÂBÕ¯ñÕÀ“…XN≥}ﬁ_„ê/∞«E˚—È(®ˆÃ∏y∆Ñùj—ø‹LŸ©ÍÛÈ˜ ™√¨øS°ﬁâi"b∂S˘FÛRÑåÍu=ìò2B]≈|mYŸ<⁄∏¡L°à"6¯'˝˝Y(yRπ≈A4MÈÍπ}∞≥‹ìó®é•%nûë$1Ãp«ëñ„≈$ ‹ÑÒ∏}=2_B^Ö˘4Ït≈Ââz)Ìg›9‰4∂—π‚_[’+&≠£ªpïª]ÔïgÚF›?›ï ∏—gq}Âl;ππKÏ$¨±YVﬂµF-ﬁkO*6x„„…RÈπ0Ò/ó=]‚∆›Bê\eÌ√|‘7•…∆;¥î¬…\·FÛ7bÙUûµ™Ì…¸åß7ñœ<-»ä’/Ó…Gã¯¥π≤Á8÷[e§%⁄´Ë^Äh*@ó,4¥úÌqêS†ñºbÎ6‘ 4òuü0£∆˘ÿ¨ﬁ‹#°?3 nﬁNEùÃ Üâ∑Ã≠∏É˘¥£â±πzkë"√Q‰Ç—∆–≥ π√¸ mÓÕ;€S⁄G/OZµ° ◊4;o 'I}ÖõgU∞÷êÁõ¬èqı·ûY}`i&,8øî|≥‘µÚ÷Y¥®ˇÕ)ÄjXœWÆ◊•
+`Ë=ŒæÕxı∆Îâ˜ÜV62âµ^'íñ·ÔÔÄÑqÿqÖâ¨›–ﬁß`‘…Ç„^XIRù„âw2ãçØÒ{M*Â~√B,‘\∏XàSx≠Åºﬁ˝CÏ'ƒ„%¯ºî“+ ÖŒÛ∆ÑÏ·≠_ó≥ñÄ}pÇı7^Ÿ⁄Á
+˜†ÎÖˇ·®y‘°Xœv◊T3}ÆQÛæ‡ﬂ4≥<<ºƒÛÛ„ˆ¨Æ™¨8¡◊j˘K'GO†A∏Í°Ωôââô˝√—ë«YxÂ ä ˘~~º%‡‘a∫z‹ÊûÛÓ˙ªâíkê6ñÎûõÿnÖﬂDö‡‹≤À'„Kü	ULÚò¸˚	oZΩO+Cò<Õ¬X*q(¡∆	Â<Œ¬¥TÊl	‚Ü’8œtÃ¯V©qÅÁòﬁ4.ÈnÄß„µ^˚¬eﬂM®Ù¯…L0¡OvÆ’}¸GLá˛3∫∫([´anpÙÊÕµ•ëå»S£p#∆[µµŸÓ4∑ˆTM˘⁄Æ≤vJ\£ÜCú‹}{`uA‰∑jBL€å"∑mıeDπtä ØT;©RLû«À≠)â ‡Wt\Ú‹ñå•É	Á‚®+5'„ä¢¥Œ∫◊ŒVí“Pxo‰˜©‡â=¢Ú§–”êYíì›˘?)¡ôIú1
+óÙéwÍ3v8»öÚÈàÎø˘(RVx⁄ä«
+Îã¸E-˚åhk˝Y3öˇ˚Œm»
+;è¸≈A˙3–iˇÓ[,¯Ê„—_ èÏÒ·g§Ü©R∞≥Ω{‰lgÍN•¯¨Z˛†àvΩAdÈ,◊{ë˙∏◊8’%&(møM{jåÒŒrë2ZÌX1Û^’:™ˆ∆∫/Áü∫éö˜˘,{‡ÀœÜ4ÄØˆÆ◊å¯ˆıu`ãC*É\Qñ||¿&Ø⁄:i≠ﬁ\å:¯‘4`÷ |^ENıæuòy	Ô&|≠E8xΩœ8¿[2‘®¡+>vw,çØùÖ•√óº*ë \àti‰ÈXπ≠û8±] òÔFØ+n¬Ãa4™3^€0üÒYç4‘SåÔlõ+ö|V„
+¨2/˛ç¡3s/Ñ„{>—ﬂ∆ávºæí0É Rè`µåÊ?§%ä≥¿å©VàAà<_] O‡˘$”≤∂/kÇã|ÂèŸë|R\L|MÓ—bπŒÉScx„Ú0¨ÖÇ´5∏Q∂ñÕÚ>	ü‡9v∞ ,&*Åô+j˛>Ω\Y¯[¥”¯G¯¬Nr∑3Ò’…F@ÎÕ7Rj:-¥áFQSç◊2f9™‘ Ëá÷Qîµ¨óoî-¿ñ›Úπ≤Y>äõ¬–«rŸı&AÙ®Z®
+àYÓñÔfêÎ üfytãGÖŒ¿ˆ∑É∆»◊˚.•5¥ÉËM⁄≈`πO-|è¿%QvUÛIÄ0ù¢1ô^i∫%Îè[<fb=8≈;<~M©.É∑¨ºÊ!G·eq-ók@ k*VsfÎc…*A„@Añ ¬xLÿ$≠
+ïÜãØj Q2k‹^∫|v$.–)ì%SâÈHÙäeâ∞wéU
+•+£πD±ïK‚29≤êà…§ ?ÈòLkÒ¿]ÂÁ≤Çßπcd)S.ØÜãDXÜ\êGÎƒr≠úÆR≤‰≈Â2î…ª¢ïãÂ,+ƒc-Èª9‰nÓË5_∂¨{¸‡Å1e∆úKV¨Ÿ∞e	√û,<GNúπ  "qEFAEC«¿‹
+“ÂÜ≥$ÀÊoâ‹ŒÛx‡>‰îT‘4|i˘—Ò∞e§gàPaÙ+µ£à¢DS+n…\ì$Kë*M∫lÙ≥.†Êˆ`ﬁ„®€l–·?ˇk≤”=ÒØΩéyÎçwˆ4Èä!FZe∫*ÀØ¶‹0ÌöÎe˚ÕM∑ÀÒè63Î∞_ô\/º≤Uæ<ä*÷Øƒ
+•ÕÕ∂ J*=∑Zµ™çvÔü5Œÿß^ùµ÷yi…fçuœc˜ùÙùSNª‰{c.€ÏÁ¸T&‡uA¡∏ÛÉòBÃ Êòﬂ›[◊;˚¯π°˘„O·NØƒΩ¯ïŒ?~	 ‘ !"#_text/javascript_*file:///Users/joahog/Desktop/PMD/script.jsObplist00‘45X$versionX$objectsY$archiverT$top Ü†´%&,-./0U$null€	
+R$3V$classR$6R$1R$9R$4R$7R$2R$5R$0R$8ÄÄ
+Ä Ä	ÄÄ ÄÄ” 
+!#$WNS.base[NS.relativeÄ ÄÄ_*file:///Users/joahog/Desktop/PMD/script.js“'()*Z$classnameX$classesUNSURL¢)+XNSObject#Aæm@,(ö5_text/javascriptàï#Ôˇˇˇˇˇˇ“'(12]NSURLResponse¢3+]NSURLResponse_NSKeyedArchiver—67_WebResourceResponseÄ    # - 2 7 C I ` c j m p s v y |  Ç Ö á â ã ç è ë ì ï ó ô õ ¢ ™ ∂ ∏ ∫ º È Ó ˘/2;@NQ_qtä             8              åOàï/*
+For this application I have used the Module Design Pattern in combination with the Object prototype constructor. 
+I found The Module Pattern easier to use than Revealing Module Pattern. It has a flexibility to bind functions to the module which
+is minimazing the risk of having variables being overwritten or the function names conflicting. 
+All functions are placed inside of the module and thereby gets boud to the module and I noticed that I prefer writing functions with 
+object literal notation. You don't need to use the this keyword wich sometimes can be confusing.
+The Object prototype constructor returns a reference to the Object constructor function that created the instance object. I wanted to try 
+out on this and find it easy to understand how the new Object gets created using the constructor.
+By using this type of constructor I'm setting the new Objects prototype to an instance of the constructor, so that 
+new Object inherits all of the properties that the constructor contains.
+
+github: https://github.com/joannahogberg/PMDB
+link: https://joannahogberg.github.io/PMDB
+*/
+
+
+
+function init() {
+
+    const movieByGenreBtn = document.getElementById("selectMovies");
+    const topMovieBtn = document.getElementById("topMovieBtn");
+    const worstMovieBtn = document.getElementById("worstMovieBtn");
+    const showAllMovieBtn = document.getElementById("showMovieBtn");
+    const addMovieBtn = document.getElementById("addMovieBtn");
+    const thisYearMovieBtn = document.getElementById("thisYearMovieBtn");
+    const editMovieBtn = document.getElementById("editMovieBtn");
+
+    /**
+     * Eventlistener to apply click/change-functions to buttons
+     */
+    topMovieBtn.addEventListener("click", MovieDataBase.getTopMovie);
+    worstMovieBtn.addEventListener("click", MovieDataBase.getWorstMovie);
+    movieByGenreBtn.addEventListener("change", MovieDataBase.showMovByGenre);
+    addMovieBtn.addEventListener("click", MovieDataBase.movieAddedByForm);
+    showAllMovieBtn.addEventListener("click", MovieDataBase.getAllMovies);
+    thisYearMovieBtn.addEventListener("click", MovieDataBase.showMoviesThisYear);
+    editMovieBtn.addEventListener("click", MovieDataBase.saveMovieEdits);
+
+
+
+    /**
+     * Call updateMovie function to set the option values of selMovElem
+     */
+    MovieDataBase.updateMovie();
+
+
+
+
+
+};
+
+/**
+ * Load init-function when window opens
+ */
+window.addEventListener("load", init);
+
+window.addEventListener("scroll", hideLogo);
+
+
+function hideLogo() {
+    const scroll = document.getElementById("logo");
+    if (document.body.scrollTop > 100 || scroll.scrollTop > 100) {
+
+        document.getElementById("logo").className = "hideLogo";
+
+
+
+    } else {
+        document.getElementById("logo").className = "logo";
+
+    }
+}
+
+/**
+ * MovieDataBase with Module Pattern
+ * @return {Object}
+ */
+
+const MovieDataBase = (function() {
+
+    /**
+     * Array of all movies
+     * @type {Array}
+     */
+
+    let movies = [{
+            title: "La La Land",
+            year: 2016,
+            genres: ['Musical', 'Comedy', 'Drama'],
+            ratings: [3, 5, 4, 3, 5],
+            descript: "A jazz pianist falls for an aspiring actress in Los Angeles.",
+            img: "https://images-na.ssl-images-amazon.com/images/M/MV5BMzUzNDM2NzM2MV5BMl5BanBnXkFtZTgwNTM3NTg4OTE@._V1_SY1000_SX675_AL_.jpg"
+        },
+        {
+            title: "One Flew Over The Cuckoo‚Äôs Nest",
+            year: 1975,
+            genres: ['Drama'],
+            ratings: [5, 5, 5, 4, 5],
+            descript: "A criminal pleads insanity after getting into trouble again and once in the mental institution rebels against the oppressive nurse and rallies up the scared patients.",
+            img: "https://images-na.ssl-images-amazon.com/images/M/MV5BZjA0OWVhOTAtYWQxNi00YzNhLWI4ZjYtNjFjZTEyYjJlNDVlL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,672,1000_AL_.jpg"
+        },
+        {
+            title: "The Godfather",
+            year: 1972,
+            genres: ['Drama', 'Crime'],
+            ratings: [2, 5, 4, 5, 5, 4],
+            descript: "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+            img: "https://images-na.ssl-images-amazon.com/images/M/MV5BZTRmNjQ1ZDYtNDgzMy00OGE0LWE4N2YtNTkzNWQ5ZDhlNGJmL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY1000_CR0,0,704,1000_AL_.jpg"
+        },
+        {
+            title: "The Lego Batman Movie",
+            year: 2017,
+            genres: ['Animation', 'Kids'],
+            ratings: [3, 4, 2, 3],
+            descript: "Bruce Wayne must not only deal with the criminals of Gotham City, but also the responsibility of raising a boy he adopted.",
+            img: 'https://images-na.ssl-images-amazon.com/images/M/MV5BMTcyNTEyOTY0M15BMl5BanBnXkFtZTgwOTAyNzU3MDI@._V1_SY1000_CR0,0,674,1000_AL_.jpg'
+        },
+        {
+            title: "The Lion King",
+            year: 1994,
+            genres: ['Animation', 'Kids', 'Drama', 'Adventure'],
+            ratings: [4, 4, 3, 5, 3],
+            descript: "Lion cub and future king Simba searches for his identity. His eagerness to please others and penchant for testing his boundaries sometimes gets him into trouble.",
+            img: "https://images-na.ssl-images-amazon.com/images/M/MV5BYTYxNGMyZTYtMjE3MS00MzNjLWFjNmYtMDk3N2FmM2JiM2M1XkEyXkFqcGdeQXVyNjY5NDU4NzI@._V1_SY1000_CR0,0,673,1000_AL_.jpg"
+        },
+        {
+            title: "Lion",
+            year: 2016,
+            genres: ['Drama', 'Romance'],
+            ratings: [3, 3, 3, 2],
+            descript: "A five-year-old Indian boy gets lost on the streets of Calcutta, thousands of kilometers from home. He survives many challenges before being adopted by a couple in Australia; 25 years later, he sets out to find his lost family.",
+            img: "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA3NjkzNjg2MF5BMl5BanBnXkFtZTgwMDkyMzgzMDI@._V1_SY1000_CR0,0,681,1000_AL_.jpg"
+        },
+        {
+            title: "Taxi Driver",
+            year: 1976,
+            genres: ['Drama', 'Crime'],
+            ratings: [5, 5, 4, 3, 5],
+            descript: "A mentally unstable Vietnam War veteran works as a night-time taxi driver in New York City where the perceived decadence and sleaze feeds his urge for violent action, attempting to save a preadolescent prostitute in the process.",
+            img: " https://images-na.ssl-images-amazon.com/images/M/MV5BNGQxNDgzZWQtZTNjNi00M2RkLWExZmEtNmE1NjEyZDEwMzA5XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,654,1000_AL_.jpg"
+        },
+        {
+            title: "The Warriors",
+            year: 1979,
+            genres: ['Action', 'Thriller'],
+            ratings: [5, 5, 5, 4, 5, 5],
+            descript: "In the near future, a charismatic leader summons the street gangs of New York City in a bid to take it over. When he is killed, The Warriors are falsely blamed and now must fight their way home while every other gang is hunting them down.",
+            img: "https://images-na.ssl-images-amazon.com/images/M/MV5BYTU2MWRiMTMtYzAzZi00NGYzLTlkMDEtNWQ3MzZlNTJlNzZkL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SY1000_CR0,0,656,1000_AL_.jpg"
+        },
+        {
+            title: "It",
+            year: 2017,
+            genres: ['Drama', 'Thriller'],
+            ratings: [2],
+            descript: "In a small town in Maine, seven children known as The Losers Club come face to face with life problems, bullies and a monster that takes the shape of a clown called Pennywise.",
+            img: "https://images-na.ssl-images-amazon.com/images/M/MV5BMWZkZjgxNmMtNDQ0NC00NWFjLWE4MjEtODllNDU5ZDAxMWIyXkEyXkFqcGdeQXVyNDA5Mzc4MTU@._V1_.jpg"
+        },
+        {
+            title: "Star Wars",
+            year: 1977,
+            genres: ['Action', 'Sci-Fi'],
+            ratings: [5, 4, 3, 5, 3, 5],
+            descript: "Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a wookiee and two droids to save the galaxy from the Empire's world-destroying battle-station, while also attempting to rescue Princess Leia from the evil Darth Vader.",
+            img: "https://images-na.ssl-images-amazon.com/images/M/MV5BYzQ2OTk4N2QtOGQwNy00MmI3LWEwNmEtOTk0OTY3NDk2MGJkL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SY1000_CR0,0,664,1000_AL_.jpg"
+        },
+        {
+            title: "Moonlight",
+            year: 2016,
+            genres: ['Drama'],
+            ratings: [3, 5, 3, 4, 4, 3],
+            descript: "A timeless story of human self-discovery and connection, Moonlight chronicles the life of a young black man from childhood to adulthood as he struggles to find his place in the world while growing up in a rough neighborhood of Miami.",
+            img: "https://images-na.ssl-images-amazon.com/images/M/MV5BNzQxNTIyODAxMV5BMl5BanBnXkFtZTgwNzQyMDA3OTE@._V1_SY1000_CR0,0,674,1000_AL_.jpg"
+        },
+        {
+            title: "Her",
+            year: 2013,
+            genres: ['Drama', 'Romance', 'Sci-Fi'],
+            ratings: [3, 2, 3, 1, 2],
+            descript: "A lonely writer develops an unlikely relationship with an operating system designed to meet his every need.",
+            img: "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA1Nzk0OTM2OF5BMl5BanBnXkFtZTgwNjU2NjEwMDE@._V1_.jpg"
+        },
+        {
+            title: "Walk The Line",
+            year: 2005,
+            genres: ['Drama', 'Biography'],
+            ratings: [4, 5, 3, 3, 4, 5],
+            descript: "A chronicle of country music legend Johnny Cash's life, from his early days on an Arkansas cotton farm to his rise to fame with Sun Records in Memphis, where he recorded alongside Elvis Presley, Jerry Lee Lewis, and Carl Perkins.",
+            img: "https://images-na.ssl-images-amazon.com/images/M/MV5BMjIyOTU3MjUxOF5BMl5BanBnXkFtZTcwMTQ0NjYzMw@@._V1_SY1000_CR0,0,672,1000_AL_.jpg"
+        },
+        {
+            title: "Lars And The Real Girl",
+            year: 2005,
+            genres: ['Drama', 'Romance', 'Comedy'],
+            ratings: [3, 3, 4, 2, 3],
+            descript: "A delusional young man strikes up an unconventional relationship with a doll he finds on the Internet.",
+            img: "https://images-na.ssl-images-amazon.com/images/M/MV5BMTI4NDc1NDkwMV5BMl5BanBnXkFtZTcwNjgzMDE1MQ@@._V1_.jpg"
+        },
+        {
+            title: "Blue Valentine",
+            year: 2010,
+            genres: ['Drama', 'Romance'],
+            ratings: [5, 5, 4, 3, 2, 4],
+            descript: "The relationship of a contemporary married couple, charting their evolution over a span of years by cross-cutting between time periods.",
+            img: "https://images-na.ssl-images-amazon.com/images/M/MV5BMTU4MTQ2MzA1Ml5BMl5BanBnXkFtZTcwODE3NTgwNA@@._V1_SY1000_CR0,0,675,1000_AL_.jpg"
+        },
+        {
+            title: "Raging Bull",
+            year: 1980,
+            genres: ['Drama', 'Biography'],
+            ratings: [3, 3, 4, 3, 5],
+            descript: "An emotionally self-destructive boxer's journey through life, as the violence and temper that leads him to the top in the ring destroys his life outside it.",
+            img: "https://images-na.ssl-images-amazon.com/images/M/MV5BMjIxOTg3OTc5MF5BMl5BanBnXkFtZTcwNzkwNjMwNA@@._V1_SY1000_CR0,0,666,1000_AL_.jpg"
+        },
+        {
+            title: "Million Dollar Baby",
+            year: 2004,
+            genres: ['Drama'],
+            ratings: [3, 3, 4, 3, 3],
+            descript: "A determined woman works with a hardened boxing trainer to become a professional.",
+            img: "https://images-na.ssl-images-amazon.com/images/M/MV5BMTkxNzA1NDQxOV5BMl5BanBnXkFtZTcwNTkyMTIzMw@@._V1_SY1000_CR0,0,678,1000_AL_.jpg"
+        },
+        {
+            title: "Boys Don‚Äôt Cry",
+            year: 1999,
+            genres: ['Drama', 'Biography', 'Crime'],
+            ratings: [5, 5, 5, 3, 5],
+            descript: "Female-born Teena Brandon adopts his male identity of Brandon Teena and attempts to find himself and love in Nebraska.",
+            img: "https://images-na.ssl-images-amazon.com/images/M/MV5BN2YyODgyYjMtN2ZiZC00OWMzLTg1NjgtZGIwN2NlYTYxMTkwXkEyXkFqcGdeQXVyMTAwMzUyOTc@._V1_.jpg"
+        },
+        {
+            title: "Gilbert Grape",
+            year: 1993,
+            genres: ['Drama'],
+            ratings: [5, 5, 3, 4, 5, 3],
+            descript: "After his father's death, Gilbert has to care for his mentally disabled brother, Arnie, and his morbidly obese mother, which is suddenly challenged when love walks into his life.",
+            img: "https://images-na.ssl-images-amazon.com/images/M/MV5BY2EyZDlhNjItODYzNi00Mzc3LWJjOWUtMTViODU5MTExZWMyL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_SX674_AL_.jpg"
+        },
+        {
+            title: "The Wolf Of Wall Street",
+            year: 2013,
+            genres: ['Comedy', 'Biography', 'Crime'],
+            ratings: [5, 4, 5, 5, 3, 1],
+            descript: "Based on the true story of Jordan Belfort, from his rise to a wealthy stock-broker living the high life to his fall involving crime, corruption and the federal government.",
+            img: "https://images-na.ssl-images-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_SY1000_CR0,0,674,1000_AL_.jpg"
+        },
+        {
+            title: "Wall-E",
+            year: 2008,
+            genres: ['Animation', 'Kids', 'Adventure'],
+            ratings: [3, 2, 3, 4],
+            descript: "In the distant future, a small waste-collecting robot inadvertently embarks on a space journey that will ultimately decide the fate of mankind.",
+            img: "https://images-na.ssl-images-amazon.com/images/M/MV5BMjExMTg5OTU0NF5BMl5BanBnXkFtZTcwMjMxMzMzMw@@._V1_SY1000_CR0,0,674,1000_AL_.jpg"
+        },
+        {
+            title: "21 Gram",
+            year: 2003,
+            genres: ['Drama', 'Crime', 'Thriller'],
+            ratings: [2, 3, 2, 4, 5],
+            descript: "A freak accident brings together a critically ill mathematician, a grieving mother, and a born-again ex-con.",
+            img: "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA4MjI2OTM5N15BMl5BanBnXkFtZTcwNDA1NjUzMw@@._V1_SY1000_CR0,0,674,1000_AL_.jpg"
+        },
+        {
+            title: "Despicable Me",
+            year: 2010,
+            genres: ['Animation', 'Kids', 'Comedy', 'Adventure'],
+            ratings: [4, 4, 4, 5, 3],
+            descript: "When a criminal mastermind uses a trio of orphan girls as pawns for a grand scheme, he finds their love is profoundly changing him for the better.",
+            img: "https://images-na.ssl-images-amazon.com/images/M/MV5BMTY3NjY0MTQ0Nl5BMl5BanBnXkFtZTcwMzQ2MTc0Mw@@._V1_SY1000_CR0,0,675,1000_AL_.jpg"
+        },
+        {
+            title: "Shrek",
+            year: 2001,
+            genres: ['Animation', 'Kids', 'Comedy', 'Adventure'],
+            ratings: [3, 3, 4, 5, 2],
+            descript: "After his swamp is filled with magical creatures, Shrek agrees to rescue Princess Fiona for a villainous lord in order to get his land back.",
+            img: "https://images-na.ssl-images-amazon.com/images/M/MV5BOGZhM2FhNTItODAzNi00YjA0LWEyN2UtNjJlYWQzYzU1MDg5L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,671,1000_AL_.jpg"
+        },
+        {
+            title: "Get Hard",
+            year: 2015,
+            genres: ['Comedy', 'Crime'],
+            ratings: [1, 3, 2, 3],
+            descript: "When millionaire James King is jailed for fraud and bound for San Quentin, he turns to Darnell Lewis to prep him to go behind bars.",
+            img: "https://images-na.ssl-images-amazon.com/images/M/MV5BMTc3OTc1NjM0M15BMl5BanBnXkFtZTgwNjAyMzE1MzE@._V1_SY1000_CR0,0,674,1000_AL_.jpg"
+        }
+    ];
+
+    /**
+     * Variable declaration for moviedisplay elements
+     */
+
+    const movieList = document.getElementById("displayMovies");
+    const newMovieList = document.getElementById("displayNewMovie");
+    const moviesByGenreList = document.getElementById("displayMoviesByGenre");
+
+    let rmvGenresElem = document.getElementById("rmvGenre");
+    let selElem = document.getElementById("selMovElem");
+    let movToEditElem = document.getElementById("movToEdit");
+
+    //Object literal for rating-radiobuttons
+    const ratinScale =
+        `   <input  type="radio" name="rating" value="1">
+              <label>1</label>
+              <input  type="radio" name="rating" value="2">
+              <label>2</label>
+              <input  type="radio" name="rating" value="3">
+              <label>3</label>
+              <input  type="radio" name="rating" value="4">
+              <label>4</label>
+              <input  type="radio" name="rating" value="5">
+               <label class="five">5</label>`;
+
+
+    return {
+
+        /**
+         * Object.prototype.constructor function creates a prototype for movies object
+         * @param {String} title 		Movie title
+         * @param {Number} year 		Movie release year
+         * @param {Array} genres 		Genres for movie
+         * @param {Array} ratings		Ratings for movie
+         * @param {String} descript 	Description of movie
+         * @param {String} img 		    Img-URL for movie
+         */
+        movieConstructor: function(title, year, genres, ratings, descript, img) {
+            this.title = title;
+            this.year = year;
+            this.genres = genres;
+            this.ratings = [ratings];
+            this.descript = descript;
+            this.img = img;
+        },
+
+
+        /**
+         * Function to push new movie objects to movies array 
+         * @param {Object}         Movie object
+         */
+        addNewMovie: (movie) => {
+            movies.push(movie);
+
+
+        },
+
+
+        /**
+         * Function to save values from form and create new movie object
+         */
+        movieAddedByForm: () => {
+            let titleInput = document.getElementById('title').value;
+            let yearInput = document.getElementById('year').value;
+
+
+            //Get input from checkboxes and returns array of selected values
+            const getGenresFromCheckbox = (genres) => {
+                var addedGenres = [];
+                const checkboxes = document.getElementsByClassName("genres");
+                for (let i = 0; i < checkboxes.length; i++) {
+                    if (checkboxes[i].checked) {
+                        addedGenres.push(checkboxes[i].value);
+                    }
+                }
+                return addedGenres;
+            };
+            let genInput = getGenresFromCheckbox();
+            let rateInput = document.getElementById('ratings').value;
+            let descInput = document.getElementById('description').value;
+            let imgUrlInput = document.getElementById('imgUrl').value;
+
+            //Creates a new object with prototype of movieConstructor
+            const newMovie = new MovieDataBase.movieConstructor(titleInput, yearInput, genInput, rateInput, descInput, imgUrlInput);
+
+
+            console.log(newMovie);
+            /**
+             * Call addNewMovie function with parameter
+             * @param  {Object}        New movie object
+             */
+            MovieDataBase.addNewMovie(newMovie);
+            MovieDataBase.saveMovieEdits();
+            MovieDataBase.updateMovie();
+
+
+            //Displays the new movie to interface
+            const movieHtml = `<div class="NewMovieDiv">
+            <div class="movieElems">
+            <h4>${newMovie.title}</h4>
+        <p>Year: ${newMovie.year}</p>
+        <p>Genres: ${newMovie.genres}</p>
+        <p>Rating: ${MovieDataBase.sumUp(newMovie.ratings)} /5</p>
+        <p>Description: ${newMovie.descript}</p>
+        <form id="rating">
+        ${ratinScale}
+        <button class="submit" id="${newMovie.title}" type="button" name="${newMovie.title}" onclick="MovieDataBase.addMovieRate(this.id)">RATE: ${newMovie.title}</button>
+        </form></div><figure class="movieImg"><img  src="${newMovie.img}"  class="image"></figure></div>`;
+
+            newMovieList.innerHTML = movieHtml;
+
+            const addForm = document.getElementById("addForm");
+            addForm.reset();
+
+
+        },
+        /**
+         * Get all movies 
+         * @return {Array}    Array of all movies 
+         */
+        getMovies: (movie) => {
+            return movies;
+        },
+
+        /**
+         * Map.Reduce method to calculate avarage rating for movie
+         * @param  {Array}     Array of the movies objects prototype ratings
+         * @return {Number}		Avarage rating 
+         */
+        sumUp: (rates) => {
+
+            //The array.prototype.map() method creates a new array with the results of calling 
+            //a provided function on every element in this array. 
+            //Array.prototype.reduce()method to sum the values, and map to find the average.
+            var avg = rates.map((val, index, arr) => val / arr.length).reduce((preVal, val) => val + preVal);
+            return avg.toFixed(1); //To get only one decimal
+        },
+
+        /**
+         * Get movies for this year
+         * @return {Array}		Array of all movies released this year  
+         */
+
+        getMoviesThisYear: (year) => {
+            //Get this value for this year
+            const date = new Date();
+            const thisYear = date.getFullYear();
+
+            //Array.prototype.filter() method to check if the objects prototype value year is the same as thisYear
+            //it will be pushed into the new array.
+            return movies.filter((movie) => {
+                return movie.year == thisYear;
+            });
+        },
+
+        //Displays movies for this year when thisYearMovieBtn is clicked
+        showMoviesThisYear: () => {
+            newMovieList.innerHTML = "";
+            movieList.innerHTML = "";
+            moviesByGenreList.innerHTML = "";
+
+            const movThisYear = MovieDataBase.getMoviesThisYear(year);
+
+            let showList;
+            for (prop in movThisYear) {
+                showList = `<div class="movieDiv">
+                <div class="movieElems">
+<h4>${movThisYear[prop].title}</h4>
+<p>Year: ${movThisYear[prop].year}</p>
+<p>Genres: ${movThisYear[prop].genres}</p>
+ <p>Rating: ${MovieDataBase.sumUp( movThisYear[prop].ratings)} /5</p>
+<p>Description: ${movThisYear[prop].descript}</p>
+<form id="rating">
+${ratinScale}
+   <button class="submit" type="button" id="${movThisYear[prop].title}" name="${movThisYear[prop].title}" onclick="MovieDataBase.addMovieRate(this.id)">RATE: ${movThisYear[prop].title}</button>
+</form></div><figure class="movieImg"><img  src="${movThisYear[prop].img}"  class="image"></figure></div>
+`;
+                movieList.innerHTML += showList;
+            };
+
+        },
+
+        /**
+         * Get movies by genre
+         * @return {Array}    Array of all movies by selected genre
+         */
+
+        movieByGenre: (genres) => {
+            //Get value for selected genre
+            const x = document.getElementById("genres").selectedIndex;
+            const genre = document.getElementsByTagName("option")[x].label;
+            //Array.prototype.filter() method to create a new array with all elements that 
+            //pass the test implemented by the Object.prototype.some() method.
+            //The array.prototype.map() method then creates a new array with the results of calling a provided 
+            //function on every element in this array.
+            return movies.filter((movie) =>
+
+                    //Object.prototype.some() method to test whether 
+                    //some element in the array match the genre value that is implemented by the provided function.
+                    movie.genres.some((genres) => genres === genre))
+                .map(movie => {
+                    return movie;
+                }, 0);
+
+
+        },
+        //Displays movies for this year when movieByGenreBtn is clicked
+        showMovByGenre: () => {
+
+            newMovieList.innerHTML = "";
+            movieList.innerHTML = "";
+            moviesByGenreList.innerHTML = "";
+            //Call on movieByGenre to get objects with property value from the selected genre
+            const showMovies = MovieDataBase.movieByGenre(movies);
+
+            let showList;
+
+            for (movie in showMovies) {
+                showList = `<div class="movieDiv">
+                <div class="movieElems">
+<h4>${showMovies[movie].title}</h4>
+<p>Year: ${showMovies[movie].year}</p>
+<p>Genres: ${showMovies[movie].genres}</p>
+ <p>Rating: ${MovieDataBase.sumUp( showMovies[movie].ratings)} /5</p>
+<p>Description: ${showMovies[movie].descript}</p>
+<form id="rating">
+${ratinScale}
+  <button class="submit" type="button" id="${showMovies[movie].title}" name="${showMovies[movie].title}" onclick="MovieDataBase.addMovieRate(this.id)">RATE: ${showMovies[movie].title}</button>
+</form></div><figure class="movieImg"> <img src="${showMovies[movie].img}"  class="image"></figure></div>
+`;
+                moviesByGenreList.innerHTML += showList;
+            };
+            document.getElementById("genres").selectedIndex = null;
+        },
+
+
+        //Display all movies when showAllMovieBtn is clicked
+        getAllMovies: () => {
+            newMovieList.innerHTML = "";
+            movieList.innerHTML = "";
+            moviesByGenreList.innerHTML = "";
+            //Array.prototype.map() method returns a new array based on the previous movies array.
+            //Callback function handle the looping and sets listAllMovies to be the object literals value 
+            let listAllMovies = movies.map(movie =>
+                movie = `<div class="movieDiv">
+                <div class="movieElems">
+                <h4>${movie.title}</h4>
+            <p>Year: ${movie.year}</p>
+            <p>Genres: ${movie.genres}</p>
+           <p>Ratings: ${MovieDataBase.sumUp(movie.ratings)} /5</p>
+            <p>Description: ${movie.descript}</p>
+            <form id="rating">
+            ${ratinScale}
+              <button class="submit" id="${movie.title}" type="button" name="${movie.title}" onclick="MovieDataBase.addMovieRate(this.id)">RATE: ${movie.title}</button>
+            </form></div><figure class="movieImg"> <img src="${movie.img}"  class="image"></figure></div>`
+            );
+            movieList.innerHTML = listAllMovies.sort(); //Sort to list in alphabetic order
+
+
+        },
+        /**
+         * Calculate the rating of a movie
+         * @param  {Object}     Array of all movie objects
+         * @return {Number}		Ratings
+         */
+        getRate: (movie) => {
+            //Array.prototype.reduce() method with parameters: previous value & current value
+            //and a single number is returned
+            const sumOfRatings = movie.ratings.reduce((total, rating) => {
+                //Looping to get: sumOfRatings += rating;
+                return total + rating;
+            }, 0);
+            const numberOfRatings = movie.ratings.length;
+            return (sumOfRatings / numberOfRatings).toFixed(1);
+        },
+
+        /**
+         * Get the movie with lowest rating
+         * @param {Number} 
+         * @return {Object}     Movie object with highest rating
+         */
+        movieByTopRating: () => {
+            //Array.prototype.reduce() method with parameters: previous value & current value
+            return movies.reduce((preVal, val) => {
+                //If previous movies value is greater than current movies value return current value
+                //else return previous movies value
+                if (MovieDataBase.getRate(preVal) < MovieDataBase.getRate(val)) {
+
+                    return val;
+                } else {
+
+                    return preVal;
+                }
+            });
+        },
+
+        /**
+         * Get the movie with lowest rating
+         * @param {Number} 
+         * @return {Object}     Movie object with lowest rating
+         */
+        movieByWorstRating: () => {
+            //Array.prototype.reduce() method with parameters: previous value & current value
+            return movies.reduce((preVal, val) => {
+                //If previous movies value is greater than current movies value return current value
+                //else return previous movies value
+                if (MovieDataBase.getRate(preVal) > MovieDataBase.getRate(val)) {
+                    return val;
+                } else {
+                    return preVal;
+                }
+            });
+        },
+
+        //Display top rated movie when topMovieBtn is clicked
+        getTopMovie: () => {
+            //Call on movieByTopRating to get object with highest rating and save in movie variable
+            const movie = MovieDataBase.movieByTopRating();
+            movieList.innerHTML = "";
+            newMovieList.innerHTML = "";
+            moviesByGenreList.innerHTML = "";
+
+            let movieHtml = `
+            <div class="movieDiv">
+            <div class="movieElems">
+            <h4>${movie.title}</h4>
+            <p>Year: ${movie.year}</p>
+            <p>Genres: ${movie.genres}</p>
+            <p>Rating: ${MovieDataBase.sumUp(movie.ratings)} /5</p>
+            <p>Description: ${movie.descript}</p>
+           
+            <form id="rating">
+           ${ratinScale}
+             <button class="submit" type="button" id="${movie.title}" name="${movie.title}" onclick="MovieDataBase.addMovieRate(this.id)">RATE: ${movie.title}</button>
+            </form></div><figure class="movieImg"><img  src="${movie.img}"  class="image"></figure></div>`;
+            movieList.innerHTML = movieHtml;
+
+
+        },
+        //Display top rated movie when worstMovieBtn is clicked
+        getWorstMovie: () => {
+            //Call on movieByWorstRating to get object with lowest rating and save in movie variable
+            const movie = MovieDataBase.movieByWorstRating();
+            movieList.innerHTML = "";
+            newMovieList.innerHTML = "";
+            moviesByGenreList.innerHTML = "";
+
+            let movieHtml = `
+            <div class="movieDiv">
+            <div class="movieElems">
+            <h4>${movie.title}</h4>
+            <p>Year: ${movie.year}</p>
+            <p>Genres: ${movie.genres}</p>
+            <p>Rating: ${MovieDataBase.sumUp(movie.ratings)} /5</p>
+            <p>Description: ${movie.descript}</p>
+            <form id="rating">
+             ${ratinScale}
+             <button class="submit" type="button" id="${movie.title}" name="${movie.title}" onclick="MovieDataBase.addMovieRate(this.id)">RATE: ${movie.title}</button>
+            </form></div><figure class="movieImg"><img  src="${movie.img}"  class="image"></figure></div>`;
+            movieList.innerHTML = movieHtml;
+
+        },
+
+
+        //Function to rate rate movie by radio-buttons
+        rateMovie: () => {
+
+            var rateElem = document.getElementById("rating");
+            console.log(rateElem);
+            let rateValue = 0;
+            for (var i = 0; i < rateElem.rating.length; i++) {
+                if (rateElem.rating[i].checked == true) {
+                    rateValue = rateElem.rating[i].value;
+                };
+            };
+
+
+            return rateValue;
+
+        },
+        addMovieRate: (movieToRate) => {
+
+            const value = MovieDataBase.rateMovie();
+            const thisMovie = movies.filter((movie) =>
+                movie.title == movieToRate);
+            for (prop in thisMovie) {
+                thisMovie[prop].ratings.push(parseInt(value));
+            }
+
+
+        },
+
+        /**
+         * Sets the option values for the selMovElem
+         */
+        updateMovie: () => {
+
+            selElem.innerHTML = `<option value="" selected disabled>Select Movie</option>`;
+
+            movToEditElem.innerHTML = "";
+            //Array.prototype.filter() method to loop through the movies array and set the
+            //option values to the movies.prototype.title
+            return movies.filter((movie) =>
+                selElem.innerHTML += `<option value="${movie.title}">${movie.title}</option>`
+            );
+
+
+        },
+        /**
+         * Sets the option values for the rmvGenresElem
+         */
+        getSelMovieGenres: () => {
+
+            rmvGenresElem.innerHTML = `<option value="" selected disabled>Genres</option>`;
+            //Set variable to option values
+            const optionVal = document.getElementById("selMovElem").value;
+
+            //Object literal to set the movToEditElem.innerHTML to be the selected movie title
+            movToEditElem.innerHTML = `${optionVal}`;
+
+            //Array.prototype.filter() method to check if the objects prototype value title 
+            //is the same as optionVal. Saves the correct object in the selMovie variable
+            const selMovie = movies.filter((movie) =>
+                movie.title == optionVal
+            );
+
+            for (prop in selMovie) {
+                let genreList = selMovie[prop].genres;
+                return genreList.filter((genres) =>
+
+                    rmvGenresElem.innerHTML += `<option value="${genres}">${genres}</option>`
+                );
+
+
+            };
+
+
+        },
+        /**
+         * Function to add/remove genre from selected movie
+         */
+        saveMovieEdits: () => {
+            //Set variables to option values
+            const toRemove = document.getElementById("rmvGenre").value;
+            const toAdd = document.getElementById("addGenre").value;
+            const movieTitle = document.getElementById("selMovElem").value;
+
+            //Array.prototype.filter() method to check if the objects prototype value title 
+            //is the same as movieTitle. Saves the correct object in the movieToEdit variable
+
+            const movieToEdit = movies.filter((movie) =>
+                movie.title == movieTitle
+            );
+
+            for (prop in movieToEdit) {
+                let genArr = movieToEdit[prop].genres;
+                for (let i = 0; i < genArr.length; i++) {
+                    //If statement to check if the genre value is same as toAdd then return
+                    if (genArr[i] === toAdd) {
+                        return;
+                    }
+                }
+                //Else push the new value into selected object.prototype.genres array
+                movieToEdit[prop].genres.push(toAdd);
+            }
+            for (prop in movieToEdit) {
+                let genArr = movieToEdit[prop].genres;
+                for (let i = 0; i < genArr.length; i++) {
+                    //If statement to check if the genre value is same as toRemove then splice() method to remove 
+                    //index from selected object.prototype.genres array
+                    if (genArr[i] === toRemove) {
+                        movieToEdit[prop].genres.splice(i, 1);
+
+                    }
+
+                }
+            }
+            MovieDataBase.getSelMovieGenres();
+            MovieDataBase.updateMovie();
+
+            const editForm = document.getElementById("editMovieForm");
+            editForm.reset();
+        }
+    };
+})();
+
+
+// document.getElementById("selMovElem").selectedIndex = null;            1   <   R   p      ñ   ®   ≤   ∏   Ú   Û  >¬  >«  >–  >Ê  >Ô  ?  A9  oÉ  oé  oî  o’  tû  vØ  v∏  v√  w!  |V  ∑“  ∑€  ∑Ì  ∏  ∫:             $             B”

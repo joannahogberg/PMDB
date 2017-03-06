@@ -51,7 +51,8 @@ body {
   width: 100%;
   font-size: 16px;
   background: #9C2542;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden; }
 
 .wrapper {
   display: -webkit-box;
@@ -184,13 +185,13 @@ h2 {
   -ms-flex-pack: center;
   z-index: 10;
   background: #9C2542;
-  width: 80vw;
+  width: 95vw;
   margin: 0 auto;
-  margin-bottom: 2em; }
+  margin-bottom: 1em; }
   @media (min-width: 800px) {
     #displayMovies,
     #displayMoviesByGenre {
-      width: 90vw; } }
+      width: 70vw; } }
 
 #displayNewMovie {
   display: -webkit-box;
@@ -334,8 +335,8 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   margin-top: 2em;
-  width: 80vw;
-  padding: 3em;
+  width: 95vw;
+  padding: 1em;
   border: 10px solid #49fee3; }
   @media (min-width: 464px) {
     .addMovieSection,
@@ -348,7 +349,8 @@ button,
   @media (min-width: 800px) {
     .addMovieSection,
     #editMovieForm {
-      margin-top: 20em; } }
+      margin-top: 20em;
+      width: 80vw; } }
 
 .editMovieDiv {
   display: -webkit-box;
@@ -387,7 +389,13 @@ button,
   -moz-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 1em 3em 1em; }
+  padding: 1em; }
+  @media (min-width: 650px) {
+    #addForm {
+      padding: 3em; } }
+  @media (min-width: 1200px) {
+    #addForm {
+      width: 700px; } }
 
 .addGenresDiv label {
   display: -webkit-box;
