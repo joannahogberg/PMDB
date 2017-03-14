@@ -35,6 +35,7 @@ function init() {
     thisYearMovieBtn.addEventListener("click", MovieDataBase.showMoviesThisYear);
     editMovieBtn.addEventListener("click", MovieDataBase.saveMovieEdits);
 
+
     /**
      * Call updateMovie function to set the option values of selMovElem
      */
@@ -49,16 +50,15 @@ window.addEventListener("load", init);
 
 window.addEventListener("scroll", hideLogo);
 
-
-
+/**
+ * Function to hide logo when window is scrolled
+ */
 
 function hideLogo() {
     const scroll = document.getElementById("logo");
     if (document.body.scrollTop > 100 || scroll.scrollTop > 100) {
 
         document.getElementById("logo").className = "hideLogo";
-
-
 
     } else {
         document.getElementById("logo").className = "logo";
@@ -298,6 +298,8 @@ const MovieDataBase = (function() {
     let selElem = document.getElementById("selMovElem");
     let movToEditElem = document.getElementById("movToEdit");
 
+
+
     //Object literal for rating-radiobuttons
     const ratinScale =
         `   <input  type="radio" name="rating" value="1">
@@ -353,6 +355,8 @@ const MovieDataBase = (function() {
          * Function to save values from form and create new movie object
          */
         movieAddedByForm: () => {
+
+
             let titleInput = document.getElementById('title').value;
             let yearInput = document.getElementById('year').value;
             let rateInput = document.getElementById('ratings').value;
@@ -374,39 +378,69 @@ const MovieDataBase = (function() {
             let descInput = document.getElementById('description').value;
             let imgUrlInput = document.getElementById('imgUrl').value;
 
-            //Creates a new object with prototype of movieConstructor
-            let newMovie = new MovieDataBase.movieConstructor(titleInput, Number(yearInput), genInput, Number(rateInput), descInput, imgUrlInput);
+            /**
+             *              Regular expression to check value for a 4 digit number
+             * ^            Asserts position at start of the string
+             * (            Denotes the start of a capturing group
+             * \d{4}        means 4 numerical digits
+             * )            closes the group.
+             * $            is the end of the line
+             */
+
+            let regex_year = /^\d{4}$/;
 
             /**
-             * Call addNewMovie function with parameter
-             * @param  {Object}        New movie object
+             *              Regular expression to check value for URL
+             *              URL-matching regex by John Gruber:
+             *              https://gist.github.com/searls/1033143
              */
-            MovieDataBase.addNewMovie(newMovie);
-            MovieDataBase.saveMovieEdits();
-            MovieDataBase.updateMovie();
-            MovieDataBase.getMovies();
+
+            let regex_url = /\b((?:https?:\/\/|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}\/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'".,<>?«»“”‘’]))/i;
 
 
-            //Displays the new movie to interface
-            const movieHtml = `<div class="NewMovieDiv">
-            <div class="movieElems">
-            <h4>${newMovie.title}</h4>
-        <p>Year: ${newMovie.year}</p>
-        <p>Genres: ${newMovie.genres}</p>
-        <p>Rating: ${MovieDataBase.sumUp(newMovie.ratings)} /5</p>
-        <p>Description: ${newMovie.descript}</p>
-        <form id="rating">
-        ${ratinScale}
-        <button class="submit" id="${newMovie.title}" type="button" name="${newMovie.title}" onclick="MovieDataBase.addMovieRate(this.id)">RATE: ${newMovie.title}</button>
-        </form></div><figure class="movieImg"><img  src="${newMovie.img}"  class="image"></figure></div>`;
+            if (titleInput == "") {
+                alert("Did you add a title?");
 
-            newMovieList.innerHTML = movieHtml;
+            }
+            //The exec() method tests for a match in a string.
+            else if (!regex_year.exec(yearInput)) {
+                alert("Release year must be: XXXX");
 
-            const addForm = document.getElementById("addForm");
-            addForm.reset();
+            } else if (imgUrlInput == "" && !regex_url.exec(imgUrlInput)) {
+                alert("Did you add a valid image URL for your movie?");
+            } else {
+                //Creates a new object with prototype of movieConstructor
+                let newMovie = new MovieDataBase.movieConstructor(titleInput, Number(yearInput), genInput, Number(rateInput), descInput, imgUrlInput);
+
+                /**
+                 * Call addNewMovie function with parameter
+                 * @param  {Object}        New movie object
+                 */
+                MovieDataBase.addNewMovie(newMovie);
+                MovieDataBase.saveMovieEdits();
+                MovieDataBase.updateMovie();
+                MovieDataBase.getMovies();
 
 
+                // Displays the new movie to interface
+                const movieHtml = `<div class="NewMovieDiv">
+                <div class="movieElems">
+                <h4>${newMovie.title}</h4>
+            <p>Year: ${newMovie.year}</p>
+            <p>Genres: ${newMovie.genres}</p>
+            <p>Rating: ${MovieDataBase.sumUp(newMovie.ratings)} /5</p>
+            <p>Description: ${newMovie.descript}</p>
+            <form id="rating">
+            ${ratinScale}
+            <button class="submit" id="${newMovie.title}" type="button" name="${newMovie.title}" onclick="MovieDataBase.addMovieRate(this.id)">RATE: ${newMovie.title}</button>
+            </form></div><figure class="movieImg"><img  src="${newMovie.img}"  class="image"></figure></div>`;
 
+                newMovieList.innerHTML = movieHtml;
+
+                const addForm = document.getElementById("addForm");
+                addForm.reset();
+
+            }
         },
 
         /**

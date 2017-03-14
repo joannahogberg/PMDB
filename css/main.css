@@ -424,6 +424,10 @@ button,
 #rmvGenre {
   margin: 0.5em 0 0.5em; }
 
+#required {
+  font-size: 0.8em;
+  margin-bottom: 0; }
+
 #selMovElem {
   margin: 0; }
 
@@ -480,8 +484,13 @@ input {
   -webkit-align-self: center;
   -moz-align-self: center;
   -ms-align-self: center;
-  align-self: center;
-  margin: 1.5em 0 0.5em; }
+  align-self: center; }
+
+#editMovieBtn {
+  margin: 1.5em 0 1.5em; }
+
+#addMovieBtn {
+  margin: 1em 0 -1em; }
 
 #addForm label {
   margin: 1em 0 0.5em;

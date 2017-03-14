@@ -262,6 +262,11 @@ button,
     margin: 0.5em 0 0.5em;
 }
 
+#required {
+    font-size: 0.8em;
+    margin-bottom: 0;
+}
+
 #selMovElem {
     margin: 0;
 }
@@ -306,7 +311,14 @@ input {
 #editMovieBtn {
     @include flex-center;
     @include align-self(center);
-    margin: 1.5em 0 0.5em;
+}
+
+#editMovieBtn {
+    margin: 1.5em 0 1.5em;
+}
+
+#addMovieBtn {
+    margin: 1em 0 -1em;
 }
 
 #addForm label {

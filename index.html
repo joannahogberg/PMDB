@@ -160,16 +160,16 @@
 
 
 
-                <form id="addForm" action="index.html" method="post">
+                <form id="addForm" method="post">
                     <h2>Add Missing Movie to the DataBase</h2>
                     <p>If you feel that a movie is missing feel free to add it yourself through this form.</p>
 
-                    <label for="title">Movie Title:</label>
-                    <input id="title" type="text" name="title" value="">
-                    <label for="year">Release year:</label>
-                    <input id="year" type="text" name="year" value="">
+                    <label for="title">Movie Title*</label>
+                    <input id="title" type="text" name="title" value="" placeholder="Place movie title*">
+                    <label for="year">Release year*</label>
+                    <input id="year" type="text" name="year" value="" placeholder="YEAR*">
 
-                    <label for="genres">Add genres:</label><br>
+                    <label for="genres">Select genres for movie</label><br>
                     <div class="addGenresDiv">
 
                         <label>Action  <input class="genres" type="checkbox" value="Action"></label>
@@ -185,7 +185,7 @@
                         <label>  Sci-Fi  <input class="genres" type="checkbox" value="Sci-Fi">  </label>
                         <label>  Thriller  <input class="genres" type="checkbox" value="Thriller"></label>
                     </div>
-                    <label for="ratings">Add my rating:</label>
+                    <label for="ratings">Add your rating</label>
                     <select id="ratings" name="ratings">
                         <option value="" selected disabled>Rating</option>
                         <option value="5">5</option>
@@ -195,14 +195,15 @@
 						<option value="1">1</option>
                         
             </select>
-                    <label for="description">Movie Description:</label>
+                    <label for="description">Movie Description</label>
                     <input id="description" type="text" name="description" value="" placeholder="Place movie decription">
-                    <label for="imgUrl">Image URL:</label>
-                    <input id="imgUrl" type="url" placeholder="Insert valid img-url">
+                    <label for="imgUrl">Image URL*</label>
+                    <input id="imgUrl" type="url" placeholder="Insert valid img-url*">
+                    <p id="required">*Required fiels</p>
                     <button id="addMovieBtn" type="button" name="button">ADD MOVIE</button>
                 </form>
 
-
+                <!--<p id="msg"></p>-->
             </section>
         </div>
         <div id="displayNewMovie">
