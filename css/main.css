@@ -363,7 +363,7 @@ button,
   display: flex; }
 
 #addMovieSec {
-  z-index: 15; }
+  z-index: 11; }
 
 .addGenresDiv {
   display: -webkit-box;
