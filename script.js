@@ -35,16 +35,10 @@ function init() {
     thisYearMovieBtn.addEventListener("click", MovieDataBase.showMoviesThisYear);
     editMovieBtn.addEventListener("click", MovieDataBase.saveMovieEdits);
 
-
-
     /**
      * Call updateMovie function to set the option values of selMovElem
      */
     MovieDataBase.updateMovie();
-
-
-
-
 
 };
 
@@ -54,6 +48,8 @@ function init() {
 window.addEventListener("load", init);
 
 window.addEventListener("scroll", hideLogo);
+
+
 
 
 function hideLogo() {
@@ -76,6 +72,8 @@ function hideLogo() {
  */
 
 const MovieDataBase = (function() {
+
+
 
     /**
      * Array of all movies
@@ -284,6 +282,10 @@ const MovieDataBase = (function() {
         }
     ];
 
+
+
+
+
     /**
      * Variable declaration for moviedisplay elements
      */
@@ -312,6 +314,7 @@ const MovieDataBase = (function() {
 
     return {
 
+
         /**
          * Object.prototype.constructor function creates a prototype for movies object
          * @param {String} title 		Movie title
@@ -331,12 +334,16 @@ const MovieDataBase = (function() {
         },
 
 
+
         /**
          * Function to push new movie objects to movies array 
          * @param {Object}         Movie object
          */
         addNewMovie: (movie) => {
+
+
             movies.push(movie);
+
 
 
         },
@@ -348,7 +355,7 @@ const MovieDataBase = (function() {
         movieAddedByForm: () => {
             let titleInput = document.getElementById('title').value;
             let yearInput = document.getElementById('year').value;
-
+            let rateInput = document.getElementById('ratings').value;
 
             //Get input from checkboxes and returns array of selected values
             const getGenresFromCheckbox = (genres) => {
@@ -359,18 +366,17 @@ const MovieDataBase = (function() {
                         addedGenres.push(checkboxes[i].value);
                     }
                 }
+                //Returns array with selected genres
                 return addedGenres;
             };
+            //Call getGenresFromCheckbox function and assign array to variable genInput
             let genInput = getGenresFromCheckbox();
-            let rateInput = document.getElementById('ratings').value;
             let descInput = document.getElementById('description').value;
             let imgUrlInput = document.getElementById('imgUrl').value;
 
             //Creates a new object with prototype of movieConstructor
-            const newMovie = new MovieDataBase.movieConstructor(titleInput, yearInput, genInput, rateInput, descInput, imgUrlInput);
+            let newMovie = new MovieDataBase.movieConstructor(titleInput, Number(yearInput), genInput, Number(rateInput), descInput, imgUrlInput);
 
-
-            console.log(newMovie);
             /**
              * Call addNewMovie function with parameter
              * @param  {Object}        New movie object
@@ -378,6 +384,7 @@ const MovieDataBase = (function() {
             MovieDataBase.addNewMovie(newMovie);
             MovieDataBase.saveMovieEdits();
             MovieDataBase.updateMovie();
+            MovieDataBase.getMovies();
 
 
             //Displays the new movie to interface
@@ -399,7 +406,9 @@ const MovieDataBase = (function() {
             addForm.reset();
 
 
+
         },
+
         /**
          * Get all movies 
          * @return {Array}    Array of all movies 
@@ -468,7 +477,7 @@ ${ratinScale}
 
         /**
          * Get movies by genre
-         * @return {Array}    Array of all movies by selected genre
+         * @return {Array}    Array of all movies from selected genre
          */
 
         movieByGenre: (genres) => {
@@ -497,12 +506,11 @@ ${ratinScale}
             movieList.innerHTML = "";
             moviesByGenreList.innerHTML = "";
             //Call on movieByGenre to get objects with property value from the selected genre
-            const showMovies = MovieDataBase.movieByGenre(movies);
-
-            let showList;
+            // const showMovies = MovieDataBase.movieByGenre(movies);
+            const showMovies = MovieDataBase.movieByGenre();
 
             for (movie in showMovies) {
-                showList = `<div class="movieDiv">
+                let showList = `<div class="movieDiv">
                 <div class="movieElems">
 <h4>${showMovies[movie].title}</h4>
 <p>Year: ${showMovies[movie].year}</p>
@@ -557,7 +565,14 @@ ${ratinScale}
                 return total + rating;
             }, 0);
             const numberOfRatings = movie.ratings.length;
-            return (sumOfRatings / numberOfRatings).toFixed(1);
+            //if statement to check if sumOfRatings is = 0 then return
+            //else return avarage rating
+            if (sumOfRatings == 0) {
+                return;
+            } else {
+                return (sumOfRatings / numberOfRatings).toFixed(1);
+            }
+
         },
 
         /**
@@ -647,14 +662,18 @@ ${ratinScale}
 
         },
 
+        /**
+         * Function to rate rate movie by radio-buttons
+         * @return {Number}    Value from checked radio button
+         */
 
-        //Function to rate rate movie by radio-buttons
         rateMovie: () => {
 
             var rateElem = document.getElementById("rating");
             console.log(rateElem);
             let rateValue = 0;
             for (var i = 0; i < rateElem.rating.length; i++) {
+                // if statement to check if radio button is checked then sets the ratevalue to checked value
                 if (rateElem.rating[i].checked == true) {
                     rateValue = rateElem.rating[i].value;
                 };
@@ -664,12 +683,18 @@ ${ratinScale}
             return rateValue;
 
         },
+
+        /**
+         * Function to rate rate movie by radio-buttons
+         * * @param {String}    String value this.id = clicked button id
+         */
         addMovieRate: (movieToRate) => {
 
             const value = MovieDataBase.rateMovie();
             const thisMovie = movies.filter((movie) =>
                 movie.title == movieToRate);
             for (prop in thisMovie) {
+                //Push value into object.prototype.ratings
                 thisMovie[prop].ratings.push(parseInt(value));
             }
 
@@ -677,17 +702,15 @@ ${ratinScale}
         },
 
         /**
-         * Sets the option values for the selMovElem
+         * Function to set the option values for selMovElem
+         * @return {Number}    Value from checked radio button
          */
         updateMovie: () => {
 
             selElem.innerHTML = `<option value="" selected disabled>Select Movie</option>`;
 
-            // movToEditElem.innerHTML = "";
-
-
             //Array.prototype.filter() method to loop through the movies array and set the
-            //option values to the movies.prototype.title
+            //selElem.innerHTML value to object literal 
             return movies.filter((movie) =>
                 selElem.innerHTML += `<option value="${movie.title}">${movie.title}</option>`
             );
@@ -703,10 +726,6 @@ ${ratinScale}
             //Set variable to option values
             const optionVal = document.getElementById("selMovElem").value;
 
-            //Object literal to set the movToEditElem.innerHTML to be the selected movie title
-            // movToEditElem.innerHTML = `${optionVal}`;
-
-
 
             //Array.prototype.filter() method to check if the objects prototype value title 
             //is the same as optionVal. Saves the correct object in the selMovie variable
@@ -714,20 +733,21 @@ ${ratinScale}
                 movie.title == optionVal
             );
 
+            //Loop through properties for selMovie and assign the input values with selMovies values
 
             for (prop in selMovie) {
-                console.log(selMovie[prop].title, selMovie[prop].year, selMovie[prop].descript, selMovie[prop].img);
                 document.getElementById("updateTitle").value = selMovie[prop].title;
                 document.getElementById("updateYear").value = selMovie[prop].year;
                 document.getElementById("updateDescription").value = selMovie[prop].descript;
                 document.getElementById("updateUrl").value = selMovie[prop].img;
 
             }
-
+            //Loop through properties for selMovie and set variable genreList to selMovie property genres
             for (prop in selMovie) {
                 let genreList = selMovie[prop].genres;
+                //Array.prototype.filter() method to loop through the genreList and set the
+                //rmvGenresElem.innerHTML value to object literal 
                 return genreList.filter((genres) =>
-
                     rmvGenresElem.innerHTML += `<option value="${genres}">${genres}</option>`
                 );
 
@@ -747,7 +767,6 @@ ${ratinScale}
 
             //Array.prototype.filter() method to check if the objects prototype value title 
             //is the same as movieTitle. Saves the correct object in the movieToEdit variable
-
             const movieToEdit = movies.filter((movie) =>
                 movie.title == movieTitle
             );
@@ -776,33 +795,20 @@ ${ratinScale}
                 }
             }
 
-
+            //Loop through properties for movieToEdit and assign the input values to movieToEdit
             for (prop in movieToEdit) {
-
                 movieToEdit[prop].title = document.getElementById("updateTitle").value;
                 movieToEdit[prop].year = document.getElementById("updateYear").value;
                 movieToEdit[prop].descript = document.getElementById("updateDescription").value;
                 movieToEdit[prop].img = document.getElementById("updateUrl").value;
-
-                console.log(movieToEdit[prop].title, movieToEdit[prop].year, movieToEdit[prop].descript, movieToEdit[prop].img);
-
-
             }
+
             MovieDataBase.getSelMovieGenres();
             MovieDataBase.updateMovie();
 
+            //Resets the editForm
             const editForm = document.getElementById("editMovieForm");
             editForm.reset();
         }
     };
 })();
-
-
-// document.getElementById("selMovElem").selectedIndex = null;
-
-
-
-// for (prop in movieToEdit) {
-//     console.log(movieToEdit[prop].title, movieToEdit[prop].year, movieToEdit[prop].descript);
-
-// }
