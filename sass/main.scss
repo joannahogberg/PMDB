@@ -198,6 +198,7 @@ button,
 .displayMovieDiv {
     @include flex-center;
     @include flex-direction(column);
+    z-index: 20;
 }
 
 .addMovieSection,
@@ -225,7 +226,7 @@ button,
 }
 
 #addMovieSec {
-    z-index: 99;
+    z-index: 15;
 }
 
 .addGenresDiv {

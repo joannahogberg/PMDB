@@ -314,7 +314,8 @@ button,
   -webkit-flex-direction: column;
   -moz-flex-direction: column;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  z-index: 20; }
 
 .addMovieSection,
 #editMovieForm {
@@ -362,7 +363,7 @@ button,
   display: flex; }
 
 #addMovieSec {
-  z-index: 99; }
+  z-index: 15; }
 
 .addGenresDiv {
   display: -webkit-box;
