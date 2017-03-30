@@ -211,23 +211,23 @@
 
         <div class="editMovieDiv" id="editMovie">
             <form id="editMovieForm">
-                <h2>Change genres of a movie in the DataBase</h2>
+                <h2>Update a movie in the DataBase</h2>
                 <p>If you want to update a movie feel free to use this form</p>
-                <!--<label for="selMovElem">Select Movie to edit:</label>-->
+
                 <h3>First select a movie to edit:</h3>
                 <select id="selMovElem" name="selMovElem" onchange="MovieDataBase.getSelMovieGenres()">
                     <option selected disabled >Select Movie</option>
 		        </select>
-                <!--<p id="movToEdit"></p>-->
+
                 <h3>Then edit:</h3>
-                <!--<label for="updateTitle">Edit Movie Title:</label>-->
+
                 <input class="editInfo" id="updateTitle" type="text" value="" placeholder="Movie Title">
-                <!--<label for="updateYear">Edit Release Year:</label>-->
+
                 <input class="editInfo" id="updateYear" type="number" value="" placeholder="Release Year">
-                <!--<label for="updateDescription">Edit Movie Description:</label>-->
+
 
                 <textarea class="editInfo" id="updateDescription" rows="" cols="" placeholder="Movie Description"></textarea>
-                <!--<label for="updateUrl">Edit Image URL:</label>-->
+
                 <input class="editInfo" id="updateUrl" type="text" placeholder="Image URL">
 
                 <label for="addGenre">Add Genre:
